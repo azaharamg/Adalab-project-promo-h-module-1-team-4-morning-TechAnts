@@ -5,7 +5,6 @@
     margin: 0;
 }
 
-
 /* ###################  BASE STYLES ################## */
 
 body {
@@ -30,7 +29,7 @@ section.anchor {
 
 /* ###################  HEADER #################### */
 
-a:-webkit-any-link {
+.header-nav-link {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -104,7 +103,6 @@ a:-webkit-any-link {
     color: #ffffff;
 }
 
-
 /* ###################  HERO #################### */
 
 .main__hero {
@@ -134,14 +132,12 @@ a:-webkit-any-link {
     height: 200px;
 }
 
-
 /* ###################  TEAM #################### */
 
 .team {
     position: relative;
     padding: 76px 15px 30px;
 }
-
 
 /* .team::after {
   content: "";
@@ -157,7 +153,6 @@ a:-webkit-any-link {
 .team .description {
     margin-bottom: 15px;
 }
-
 
 /* ###################  SKILLS ################## */
 
@@ -185,7 +180,6 @@ a:-webkit-any-link {
 .section--dark {
     background-color: #b8b8b9;
 }
-
 
 /* ##############  CONTAINER ALLS  ############## */
 
@@ -223,26 +217,38 @@ ul {
 /* ###################  FOOTER  #################### */
 
 .footer {
+    width: 100 vw;
+    font-size: 14px;
+    text-align: center;
+    color: #b8b8b9;
+    font-family: "Open Sans", sans-serif;
+    border-top: 1px solid #b8b8b9;
+    border-top-color: rgb(184, 184, 185);
+}
 
-  width: 100 vw;
-  font-size: 14px;
-  text-align: center;
-  color: #b8b8b9;
-  font-family: "Open Sans", sans-serif;
-  border-top: 1px solid #b8b8b9;
-  border-top-color: rgb(184, 184, 185);
+.footer-links {
+    display: block;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100 vw;
+    font-size: 14px;
+    text-align: center;
+    color: #b8b8b9;
+    font-family: "Open Sans", sans-serif;
+    border-top: 1px solid #b8b8b9;
+    border-top-color: rgb(184, 184, 185);
 
 }
 
 
-.footer-links{ 
-  display: block; 
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-
+.footer-links {
+    display: block;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 p {
@@ -250,7 +256,6 @@ p {
     /*width: 172px;
   height:20px;*/
 }
-
 
 /*.footer-nav{
   width: 120px;
@@ -260,10 +265,8 @@ p {
 }*/
 
 .footer-nav-ul {
-
-  padding-left: 0;
-  margin-top: 20px;
-
+    padding-left: 0;
+    margin-top: 20px;
 }
 
 .footer-nav-li {
@@ -281,6 +284,13 @@ p {
 /* ##############  RESPONSIVE  ############## */
 
 @media all and (min-width: 768px) {
+    .image {
+        width: 115.9px;
+        height: 45px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+
     .anchor {
         padding-top: 60px;
     }
