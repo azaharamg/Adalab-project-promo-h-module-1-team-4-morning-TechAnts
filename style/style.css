@@ -99,7 +99,7 @@ body {
 /* ###################  HERO #################### */
 
 .main__hero {
-    background: url("../img/img-hero1.JPG") center top no-repeat;
+    background: url("../img/img-hero1.jpg") center top no-repeat;
     background-size: cover;
     height: 421px;
     position: relative;
@@ -308,7 +308,7 @@ p {
 
 /* ##############  RESPONSIVE  ############## */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1200px) {
     .header {
         flex-wrap: nowrap;
     }
