@@ -183,11 +183,6 @@ section.anchor {
 
 /* ##############  CONTAINER ALLS  ############## */
 
-.img-adalaber1 {
-    display: block;
-    text-align: center;
-}
-
 h3.name-adalaber {
     text-align: center;
 }
@@ -196,50 +191,32 @@ ul>li {
     list-style: none;
 }
 
-.adalaber-img {
-    text-align: left;
-}
-
 .img-adalaber {
     width: 180px;
-    /*transform: rotate(270deg);*/
     margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 5px solid lightgrey;
+    border-radius: 5px;
+}
+
+.social-icons {
+    padding-top: 15px;
 }
 
 .social-icons__item {
-    height: 16px;
-    width: 16px;
     color: #099d8d;
+    display: inline;
+    margin: 3px;
 }
 
 ul {
     list-style: none;
 }
 
-.social-icons__item {
-    display: inline;
-    margin: 3px;
-}
-
-.img-adalaber {
-    display: block;
-    text-align: center;
-}
-
-h3.name-adalaber {
-    text-align: center;
-}
-
-ul>li {
-    list-style: none;
-}
-
-.adalaber-img {
-    text-align: center;
-}
-
 /* ###################  FOOTER  #################### */
 
+<<<<<<< HEAD
 .footer {
     width: 100vw;
     font-size: 14px;
@@ -256,6 +233,10 @@ ul>li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+=======
+
+.footer {
+>>>>>>> 08336f48dc96dab0a93d073338c5e39e1c5782df
     width: 100 vw;
     font-size: 14px;
     text-align: center;
@@ -263,9 +244,7 @@ ul>li {
     font-family: "Open Sans", sans-serif;
     border-top: 1px solid #b8b8b9;
     border-top-color: rgb(184, 184, 185);
-
 }
-
 
 .footer-links {
     display: block;
@@ -273,26 +252,26 @@ ul>li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
+=======
+    align-content: center;
+    padding: 30px 0px 45px 0px;  
+>>>>>>> 08336f48dc96dab0a93d073338c5e39e1c5782df
 }
 
-p {
-    margin-top: 30px;
-    /*width: 172px;
-  height:20px;*/
+.footer-nav{
+   padding-top: 20px; 
+   padding-bottom: 30px; 
 }
-
-/*.footer-nav{
-  width: 120px;
-  height: 50px;
-  
-
-}*/
 
 .footer-nav-ul {
     padding-left: 0;
+<<<<<<< HEAD
     margin-top: 20px;
     padding-left: 0;
     margin-top: 20px;
+=======
+>>>>>>> 08336f48dc96dab0a93d073338c5e39e1c5782df
 }
 
 .footer-nav-li {
@@ -306,6 +285,52 @@ p {
     color: #54585a;
     font-weight: bold;
 }
+
+@media all and (min-width: 768px) {
+       
+    .footer {        
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:0;
+      }
+     
+    .footer-nav { 
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        flex: 50% 1;
+        padding:0;
+        margin:0px 48px 0px 48px;
+        position:relative;
+        bottom:35px;
+            }
+    .footer-nav-li{
+        text-align: right;
+    }
+       
+    .team-name{
+        align-self: flex-start;
+        display:flex;
+        align-items: center;
+        flex: 50%;
+        margin:10px 48px 0px 48px;
+        }
+
+    .image{
+        align-self: flex-start;
+        display:flex;
+        align-items: center;        
+        flex: 50%;
+        margin:0px 48px 0px 48px;
+        position: relative;
+        bottom:50px;
+
+
+
+      
+    }
+
+    }
 
 
 /* ##############  RESPONSIVE  ############## */
@@ -360,9 +385,50 @@ p {
         padding-top: 0;
         margin: 0 15px;
     }
+
+    .container-central {
+        margin: 0 45px 0 45px;
+    }
+
+    .adalaber{
+        display: flex;
+        padding: 45px 0 60px 0; 
+    }
+
+    h3.name-adalaber {
+        text-align: left;
+    }
+
+    .container-bio-adalaber {
+        margin: 0 15px;
+        text-align: left;
+    }
+
+    .align-right > .container-bio-adalaber {
+        text-align: right;
+        padding-right: 45px;
+    }
+
+    .align-right > .container-bio-adalaber > h3.name-adalaber {
+        text-align: right;
+    }
+
+
+    .img-adalaber {
+        width: 205px;
+    }
+
+    .align-right > .adalaber-img {
+        order: 1;
+    }
 }
 
 @media all and (min-width: 1140px) {
+    .container-central {
+        max-width: 924px;
+        margin: auto;
+    }
+
     .team {
         display: flex;
         flex-direction: column;
@@ -380,18 +446,16 @@ p {
     .skill {
         flex-basis: 40%;
     }
-
-    .adalaber {
-        display: flex;
+    
+    .container-bio-adalaber{
+        width: 439px;
+        padding-left: 45px;
     }
 
-    .adalaber-img {
-        flex-basis: 50%;
+
+    .img-adalaber {
+        width: 278px;
     }
 
-    .container-bio-adalaber {
-        margin: 0 15px;
-        flex-basis: 50%;
-        text-align: center;
-    }
 }
+
