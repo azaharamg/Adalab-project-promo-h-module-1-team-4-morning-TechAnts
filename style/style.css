@@ -216,7 +216,6 @@ ul {
 
 /* ###################  FOOTER  #################### */
 
-<<<<<<< HEAD
 .footer {
     width: 100vw;
     font-size: 14px;
@@ -233,17 +232,6 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-=======
-
-.footer {
->>>>>>> 08336f48dc96dab0a93d073338c5e39e1c5782df
-    width: 100 vw;
-    font-size: 14px;
-    text-align: center;
-    color: #b8b8b9;
-    font-family: "Open Sans", sans-serif;
-    border-top: 1px solid #b8b8b9;
-    border-top-color: rgb(184, 184, 185);
 }
 
 .footer-links {
@@ -252,26 +240,20 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-=======
     align-content: center;
-    padding: 30px 0px 45px 0px;  
->>>>>>> 08336f48dc96dab0a93d073338c5e39e1c5782df
+    padding: 30px 0px 45px 0px;
 }
 
-.footer-nav{
-   padding-top: 20px; 
-   padding-bottom: 30px; 
+.footer-nav {
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .footer-nav-ul {
     padding-left: 0;
-<<<<<<< HEAD
     margin-top: 20px;
     padding-left: 0;
     margin-top: 20px;
-=======
->>>>>>> 08336f48dc96dab0a93d073338c5e39e1c5782df
 }
 
 .footer-nav-li {
@@ -287,50 +269,46 @@ ul {
 }
 
 @media all and (min-width: 768px) {
-       
-    .footer {        
+
+    .footer {
         flex-direction: row;
         flex-wrap: wrap;
-        margin:0;
-      }
-     
-    .footer-nav { 
+        margin: 0;
+    }
+
+    .footer-nav {
         display: flex;
         justify-content: flex-end;
         margin-left: auto;
         flex: 50% 1;
-        padding:0;
-        margin:0px 48px 0px 48px;
-        position:relative;
-        bottom:35px;
-            }
-    .footer-nav-li{
+        padding: 0;
+        margin: 0px 48px 0px 48px;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .footer-nav-li {
         text-align: right;
     }
-       
-    .team-name{
+
+    .team-name {
         align-self: flex-start;
-        display:flex;
+        display: flex;
         align-items: center;
         flex: 50%;
-        margin:10px 48px 0px 48px;
-        }
+        margin: 10px 48px 0px 48px;
+    }
 
-    .image{
+    .image {
         align-self: flex-start;
-        display:flex;
-        align-items: center;        
+        display: flex;
+        align-items: center;
         flex: 50%;
-        margin:0px 48px 0px 48px;
+        margin: 0px 48px 0px 48px;
         position: relative;
-        bottom:50px;
-
-
-
-      
+        bottom: 50px;
     }
-
-    }
+}
 
 
 /* ##############  RESPONSIVE  ############## */
@@ -390,9 +368,9 @@ ul {
         margin: 0 45px 0 45px;
     }
 
-    .adalaber{
+    .adalaber {
         display: flex;
-        padding: 45px 0 60px 0; 
+        padding: 45px 0 60px 0;
     }
 
     h3.name-adalaber {
@@ -404,12 +382,12 @@ ul {
         text-align: left;
     }
 
-    .align-right > .container-bio-adalaber {
+    .align-right>.container-bio-adalaber {
         text-align: right;
         padding-right: 45px;
     }
 
-    .align-right > .container-bio-adalaber > h3.name-adalaber {
+    .align-right>.container-bio-adalaber>h3.name-adalaber {
         text-align: right;
     }
 
@@ -418,7 +396,7 @@ ul {
         width: 205px;
     }
 
-    .align-right > .adalaber-img {
+    .align-right>.adalaber-img {
         order: 1;
     }
 }
@@ -446,8 +424,8 @@ ul {
     .skill {
         flex-basis: 40%;
     }
-    
-    .container-bio-adalaber{
+
+    .container-bio-adalaber {
         width: 439px;
         padding-left: 45px;
     }
@@ -458,4 +436,3 @@ ul {
     }
 
 }
-
