@@ -241,7 +241,7 @@ ul>li {
 /* ###################  FOOTER  #################### */
 
 .footer {
-    <<<<<<< Updated upstream width: 100 vw;
+    width: 100vw;
     font-size: 14px;
     text-align: center;
     color: #b8b8b9;
@@ -256,7 +256,7 @@ ul>li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    =======width: 100 vw;
+    width: 100 vw;
     font-size: 14px;
     text-align: center;
     color: #b8b8b9;
@@ -273,9 +273,6 @@ ul>li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-
-    >>>>>>>Stashed changes
 }
 
 p {
@@ -292,12 +289,10 @@ p {
 }*/
 
 .footer-nav-ul {
-    <<<<<<< Updated upstream padding-left: 0;
+    padding-left: 0;
     margin-top: 20px;
-    =======padding-left: 0;
+    padding-left: 0;
     margin-top: 20px;
-
-    >>>>>>>Stashed changes
 }
 
 .footer-nav-li {
