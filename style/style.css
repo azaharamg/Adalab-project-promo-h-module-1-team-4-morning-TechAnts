@@ -317,8 +317,7 @@ ul {
     .image {
         width: 115.9px;
         height: 45px;
-        margin-top: 30px;
-        margin-bottom: 45px;
+        transform: translateY(-30%);
     }
 
     .anchor {
@@ -398,6 +397,10 @@ ul {
 
     .align-right>.adalaber-img {
         order: 1;
+    }
+
+    .footer-links {
+        padding-bottom: 0;
     }
 }
 
