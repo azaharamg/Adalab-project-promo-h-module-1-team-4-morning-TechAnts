@@ -187,16 +187,18 @@ ul > li {
 }
 
 .img-adalaber {
-  width: 180px;
-  margin: 20px auto;
-  display: block;
-  text-align: center;
-  border: 5px solid lightgrey;
-  border-radius: 5px;
+    width: 180px;
+    height: 180px;
+    margin: 30px auto 15px;
+    display: block;
+    text-align: center;
+    border: 5px solid lightgrey;
+    border-radius: 5px;
 }
 
 .social-icons {
-  padding-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .social-icons__item {
@@ -204,11 +206,14 @@ ul > li {
   display: inline;
   margin: 3px;
 }
-
-ul {
-  list-style: none;
+.social-icons__link{
+    color: #099d8d;
+    text-decoration: none;
+    cursor: pointer;
 }
-
+.adalaber{
+    padding: 15px;
+}
 /* ###################  FOOTER  #################### */
 
 .footer {
@@ -263,56 +268,139 @@ ul {
   font-weight: bold;
 }
 
-@media all and (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-  }
-
-  .footer-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    flex: 50% 1;
-    padding: 0;
-    margin: 0px 48px 0px 48px;
-    position: relative;
-    bottom: 35px;
-  }
-
-  .footer-nav-li {
-    text-align: right;
-  }
-
-  .team-name {
-    align-self: flex-start;
-    display: flex;
-    align-items: center;
-    flex: 50%;
-    margin: 10px 48px 0px 48px;
-  }
-
-  .image {
-    align-self: flex-start;
-    display: flex;
-    align-items: center;
-    flex: 50%;
-    margin: 0px 48px 0px 48px;
-    position: relative;
-    bottom: 50px;
-  }
-}
-
 /* ##############  RESPONSIVE  ############## */
 
 @media all and (min-width: 768px) {
-  .image {
-    width: 115.9px;
-    height: 45px;
-    margin-top: 30px;
-    margin-bottom: 45px;
-  }
+    .image {
+        width: 115.9px;
+        height: 45px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+
+    .anchor {
+        padding-top: 60px;
+    }
+
+    .header {
+        flex-wrap: nowrap;
+    }
+
+    .header-base {
+        justify-content: flex-start;
+        padding-left: 45px;
+    }
+
+    .header-nav {
+        background-color: #099d8d;
+        height: 60px;
+        width: 50%;
+    }
+
+    .main__hero-text {
+        opacity: 0.8;
+        left: 6%;
+        transform: none;
+        width: 54%;
+    }
+
+    .team {
+        padding: 45px;
+        padding-bottom: 60px;
+    }
+
+    .skills {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 45px 30px 60px;
+    }
+
+    .skill {
+        flex-basis: 50%;
+        padding-top: 0;
+        margin: 0 15px;
+    }
+
+    .adalaber {
+        display: flex;
+        padding-bottom: 15px;
+    }
+
+    h3.name-adalaber {
+    
+        text-align: left;
+        margin-top: 45px;
+    }
+    
+
+    .container-bio-adalaber {
+        margin: 0 15px;
+        text-align: left;
+    }
+    .align-right>.adalaber-img>.img-adalaber{
+        margin: 30px;
+
+
+}
+    .align-right>.container-bio-adalaber {
+        text-align: right;
+        
+    }
+
+    .align-right>.container-bio-adalaber>h3.name-adalaber {
+        text-align: right;
+    }
+
+
+    .img-adalaber {
+        width: 205px;
+        height: 205px;
+        margin: 30px;
+    }
+
+    .align-right>.adalaber-img {
+        order: 1;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        flex: 50% 1;
+        padding: 0;
+        margin: 0px 48px 0px 48px;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .footer-nav-li {
+        text-align: right;
+    }
+
+    .team-name {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        flex: 50%;
+        margin: 10px 48px 0px 48px;
+    }
+
+    .image {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        flex: 50%;
+        margin: 0px 48px 0px 48px;
+        position: relative;
+        bottom: 50px;
+    }
+}
 
   .anchor {
     padding-top: 60px;
@@ -366,63 +454,16 @@ ul {
     padding: 45px 0 60px 0;
   }
 
-  h3.name-adalaber {
-    text-align: left;
-  }
+    .container-bio-adalaber {
+        width: 439px;
+    
+    }
 
-  .container-bio-adalaber {
-    margin: 0 15px;
-    text-align: left;
-  }
-
-  .align-right > .container-bio-adalaber {
-    text-align: right;
-    padding-right: 45px;
-  }
-
-  .align-right > .container-bio-adalaber > h3.name-adalaber {
-    text-align: right;
-  }
-
-  .img-adalaber {
-    width: 205px;
-  }
-
-  .align-right > .adalaber-img {
-    order: 1;
-  }
-}
-
-@media all and (min-width: 1140px) {
-  .container-central {
-    max-width: 924px;
-    margin: auto;
-  }
-
-  .team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team p {
-    width: 50%;
-  }
-
-  .skills {
-    justify-content: center;
-  }
-
-  .skill {
-    flex-basis: 40%;
-  }
-
-  .container-bio-adalaber {
-    width: 439px;
-    padding-left: 45px;
-  }
-
-  .img-adalaber {
-    width: 278px;
-  }
+    .img-adalaber {
+        width: 278px;
+        height: 278px;
+        margin: 45px;
+    }
+    .align-right>.adalaber-img>.img-adalaber{
+        margin: 45px;
 }
