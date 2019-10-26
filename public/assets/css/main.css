@@ -19,6 +19,7 @@
 
 section.anchor {
   padding-top: 105px;
+  padding-bottom: 45px;
 }/* ###################  HEADER #################### */.header-nav-link {
   color: white;
   text-decoration: none;
@@ -479,6 +480,24 @@ section.anchor {
 }
 
 @media all and (min-width: 1140px) {
+  .img-adalaber {
+    width: 278px;
+    margin-right: 40px;
+  }
+
+  .bio-adalaber {
+    width: 439px;
+  }
+
+  .img-adalaber__right {
+    width: 278px;
+    margin-left: 40px;
+  }
+
+  .bio-adalaber__right {
+    width: 439px;
+  }
+
   .container-central {
     max-width: 924px;
     margin: auto;

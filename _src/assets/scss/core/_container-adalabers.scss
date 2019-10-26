@@ -65,7 +65,7 @@
 }
 .img-adalaber__right{
   width: 205px;
-  margin-left: 25px;;
+  margin-left: 25px;
 }
 .name-adalaber__right{
   padding-top: 45px;
@@ -80,5 +80,18 @@
 }
 
 @media all and (min-width: 1140px) {
-  
+  .img-adalaber{
+    width: 278px;
+    margin-right: 40px;
+  }
+  .bio-adalaber{
+    width: 439px;
+  }
+  .img-adalaber__right{
+    width: 278px;
+    margin-left: 40px;
+  }
+  .bio-adalaber__right{
+    width: 439px;
+  }
 }
