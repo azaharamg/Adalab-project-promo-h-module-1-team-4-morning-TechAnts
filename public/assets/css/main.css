@@ -1,4 +1,4 @@
-/* ###################  RESET ######################## */* {
+* {
   padding: 0;
   margin: 0;
 }/* ###################  BASE STYLES ################## */body {
@@ -34,7 +34,7 @@ section.anchor {
   line-height: 2.05;
   letter-spacing: normal;
   text-align: center;
-  color: #099d8d;
+  color: aquamarine;
 }
 
 .header {

@@ -1,5 +1,3 @@
-/* ###################  RESET ######################## */
-
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +24,6 @@ body {
 section.anchor {
   padding-top: 105px;
 }
-
 /* ###################  HEADER #################### */
 
 .header-nav-link {
@@ -44,7 +41,7 @@ section.anchor {
   line-height: 2.05;
   letter-spacing: normal;
   text-align: center;
-  color: #099d8d;
+  color: aquamarine;
 }
 
 .header {
@@ -99,7 +96,6 @@ section.anchor {
 }
 
 /* ###################  HERO #################### */
-
 .main__hero {
   background: url("/assets/images/img-hero1.jpg") center top no-repeat;
   background-size: cover;
@@ -182,23 +178,23 @@ h3.name-adalaber {
   text-align: center;
 }
 
-ul>li {
+ul > li {
   list-style: none;
 }
 
 .img-adalaber {
-    width: 180px;
-    height: 180px;
-    margin: 30px auto 15px;
-    display: block;
-    text-align: center;
-    border: 5px solid lightgrey;
-    border-radius: 5px;
+  width: 180px;
+  height: 180px;
+  margin: 30px auto 15px;
+  display: block;
+  text-align: center;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
 }
 
 .social-icons {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .social-icons__item {
@@ -206,13 +202,13 @@ ul>li {
   display: inline;
   margin: 3px;
 }
-.social-icons__link{
-    color: #099d8d;
-    text-decoration: none;
-    cursor: pointer;
+.social-icons__link {
+  color: #099d8d;
+  text-decoration: none;
+  cursor: pointer;
 }
-.adalaber{
-    padding: 15px;
+.adalaber {
+  padding: 15px;
 }
 /* ###################  FOOTER  #################### */
 
@@ -338,21 +334,20 @@ ul>li {
     text-align: left;
   }
 
-  .align-right>.container-bio-adalaber {
+  .align-right > .container-bio-adalaber {
     text-align: right;
     padding-right: 45px;
   }
 
-  .align-right>.container-bio-adalaber>h3.name-adalaber {
+  .align-right > .container-bio-adalaber > h3.name-adalaber {
     text-align: right;
   }
-
 
   .img-adalaber {
     width: 205px;
   }
 
-  .align-right>.adalaber-img {
+  .align-right > .adalaber-img {
     order: 1;
   }
 
@@ -422,12 +417,12 @@ h3.name-adalaber {
   text-align: left;
 }
 
-.align-right>.container-bio-adalaber {
+.align-right > .container-bio-adalaber {
   text-align: right;
   padding-right: 45px;
 }
 
-.align-right>.container-bio-adalaber>h3.name-adalaber {
+.align-right > .container-bio-adalaber > h3.name-adalaber {
   text-align: right;
 }
 
@@ -435,7 +430,7 @@ h3.name-adalaber {
   width: 205px;
 }
 
-.align-right>.adalaber-img {
+.align-right > .adalaber-img {
   order: 1;
 }
 
