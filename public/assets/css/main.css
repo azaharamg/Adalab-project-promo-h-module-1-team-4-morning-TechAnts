@@ -202,13 +202,14 @@ section.anchor {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: 25px;
 }
 
 .img-adalaber,.img-adalaber__right {
   width: 180px;
   border: 5px solid lightgrey;
   border-radius: 5px;
-  margin: 25px 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .name-adalaber,.name-adalaber__right {
@@ -221,7 +222,7 @@ section.anchor {
 
 .social_icons_list,.social_icons_list__right {
   list-style: none;
-  padding: 15px 0 15px 0;
+  padding-top: 15px;
 }
 
 .social-icons__item {
@@ -364,9 +365,10 @@ section.anchor {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 60px;
   }
 
   .img-adalaber {
@@ -375,7 +377,6 @@ section.anchor {
   }
 
   .name-adalaber {
-    padding-top: 45px;
     text-align: left;
   }
 
@@ -390,6 +391,10 @@ section.anchor {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    margin-top: 60px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .img-adalaber__right {
@@ -398,7 +403,6 @@ section.anchor {
   }
 
   .name-adalaber__right {
-    padding-top: 45px;
     text-align: right;
   }
 
@@ -480,22 +484,13 @@ section.anchor {
 }
 
 @media all and (min-width: 1140px) {
-  .img-adalaber {
+  .img-adalaber,.img-adalaber__right {
     width: 278px;
     margin-right: 40px;
   }
 
-  .bio-adalaber {
-    width: 439px;
-  }
-
-  .img-adalaber__right {
-    width: 278px;
-    margin-left: 40px;
-  }
-
-  .bio-adalaber__right {
-    width: 439px;
+  .bio-adalaber,.bio-adalaber__right {
+    max-width: 439px;
   }
 
   .container-central {

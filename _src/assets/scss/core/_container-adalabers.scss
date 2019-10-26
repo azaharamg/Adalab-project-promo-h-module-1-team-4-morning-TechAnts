@@ -6,13 +6,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
 }
 .img-adalaber,
 .img-adalaber__right{
   width: 180px;
   border: 5px solid lightgrey;
   border-radius: 5px;
-  margin: 25px 0 10px 0;
+  margin-bottom:10px;
 }
 .name-adalaber,
 .name-adalaber__right{
@@ -25,7 +26,7 @@
 .social_icons_list,
 .social_icons_list__right{
   list-style: none;
-  padding: 15px 0 15px 0;
+  padding-top: 15px;
 }
 .social-icons__item{
   color: #099d8d;
@@ -43,14 +44,14 @@
   /*Adalabers left*/
 .adalaber{
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 60px;
 }
 .img-adalaber{
   width: 205px;
-  margin-right: 25px;;
+  margin-right: 25px;
 }
 .name-adalaber{
-  padding-top: 45px;
   text-align: left;
 }
 .bio-adalaber{
@@ -62,13 +63,14 @@
  /*Adalabersright*/
 .adalaber__align-right{
  flex-direction: row-reverse;
+ margin-top: 60px;
+ align-items: flex-start;
 }
 .img-adalaber__right{
   width: 205px;
   margin-left: 25px;
 }
 .name-adalaber__right{
-  padding-top: 45px;
   text-align: right;
 }
 .bio-adalaber__right{
@@ -80,18 +82,12 @@
 }
 
 @media all and (min-width: 1140px) {
-  .img-adalaber{
+  .img-adalaber,
+  .img-adalaber__right{
     width: 278px;
     margin-right: 40px;
   }
-  .bio-adalaber{
-    width: 439px;
-  }
-  .img-adalaber__right{
-    width: 278px;
-    margin-left: 40px;
-  }
-  .bio-adalaber__right{
-    width: 439px;
+  .bio-adalaber, .bio-adalaber__right {
+    max-width: 439px;
   }
 }
