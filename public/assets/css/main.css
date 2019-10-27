@@ -246,24 +246,6 @@ ul > li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.footer-links {
-  display: block;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
   padding: 30px 0px 45px 0px;
 }
 
@@ -382,6 +364,10 @@ h3.name-adalaber {
 }
 
 @media all and (min-width: 768px) {
+  .footer-links {
+    padding-bottom: 0;
+  }
+
   .image {
     width: 115.9px;
     height: 45px;
@@ -479,10 +465,6 @@ h3.name-adalaber {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-  }
-
-  .footer-links {
-    padding-bottom: 0;
   }
 }
 

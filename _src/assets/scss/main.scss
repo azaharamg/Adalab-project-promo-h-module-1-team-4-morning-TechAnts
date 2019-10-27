@@ -6,6 +6,7 @@
 }
 
 /* ###################  BASE STYLES ################## */
+@import 'core/settings';
 
 body {
   font-family: OpenSans, sans-serif;
@@ -44,7 +45,7 @@ section.anchor {
   line-height: 2.05;
   letter-spacing: normal;
   text-align: center;
-  color: #099d8d;
+  color: $color-green-primary;
 }
 
 .header {
@@ -62,7 +63,7 @@ section.anchor {
   justify-content: center;
   align-items: center;
   opacity: 0.95;
-  background-color: #099d8d;
+  background-color: $color-green-primary;
   flex: 1;
   height: 60px;
 }
@@ -187,86 +188,40 @@ ul>li {
 }
 
 .img-adalaber {
-    width: 180px;
-    height: 180px;
-    margin: 30px auto 15px;
-    display: block;
-    text-align: center;
-    border: 5px solid lightgrey;
-    border-radius: 5px;
+  width: 180px;
+  height: 180px;
+  margin: 30px auto 15px;
+  display: block;
+  text-align: center;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
 }
 
 .social-icons {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .social-icons__item {
-  color: #099d8d;
+  color: $color-green-primary;
   display: inline;
   margin: 3px;
 }
-.social-icons__link{
-    color: #099d8d;
-    text-decoration: none;
-    cursor: pointer;
+
+.social-icons__link {
+  color: $color-green-primary;
+  text-decoration: none;
+  cursor: pointer;
 }
-.adalaber{
-    padding: 15px;
+
+.adalaber {
+  padding: 15px;
 }
+
 /* ###################  FOOTER  #################### */
 
-.footer {
-  width: 100vw;
-  font-size: 14px;
-  text-align: center;
-  color: #b8b8b9;
-  font-family: "Open Sans", sans-serif;
-  border-top: 1px solid #b8b8b9;
-  border-top-color: rgb(184, 184, 185);
-}
+@import 'layout/footer';
 
-.footer-links {
-  display: block;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-links {
-  display: block;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 30px 0px 45px 0px;
-}
-
-.footer-nav {
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.footer-nav-ul {
-  padding-left: 0;
-  margin-top: 20px;
-  padding-left: 0;
-  margin-top: 20px;
-}
-
-.footer-nav-li {
-  list-style: none;
-  width: 264;
-  height: 19;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #54585a;
-  font-weight: bold;
-}
 
 /* ##############  RESPONSIVE  ############## */
 
@@ -291,7 +246,7 @@ ul>li {
   }
 
   .header-nav {
-    background-color: #099d8d;
+    background-color: $color-green-primary;
     height: 60px;
     width: 50%;
   }
@@ -356,9 +311,6 @@ ul>li {
     order: 1;
   }
 
-  .footer-links {
-    padding-bottom: 0;
-  }
 }
 
 .anchor {
@@ -375,7 +327,7 @@ ul>li {
 }
 
 .header-nav {
-  background-color: #099d8d;
+  background-color: $color-green-primary;
   height: 60px;
   width: 50%;
 }
