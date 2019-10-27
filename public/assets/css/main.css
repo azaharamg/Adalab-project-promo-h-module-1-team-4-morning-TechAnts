@@ -186,16 +186,18 @@ section.anchor {
 
 .section--dark {
   background-color: #b8b8b9;
-}/* ##############  CONTAINER ALLS  ############## */* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}/*Variable*/.heading {
+}/* ##############  CONTAINER ALLS  ############## *//*Variable*/.heading {
   font-family: Rubik;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.88;
   text-align: center;
   color: #099d8d;
+}
+
+.adalaber *,.adalaber__align-right * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .adalaber,.adalaber__align-right {
