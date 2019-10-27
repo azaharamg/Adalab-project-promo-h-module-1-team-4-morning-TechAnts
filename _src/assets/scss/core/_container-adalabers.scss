@@ -8,32 +8,32 @@
   align-items: center;
   margin-top: 25px;
 }
-.img-adalaber,
-.img-adalaber__right{
+.adalaber__img,
+.adalaber__img-right{
   width: 180px;
   border: 5px solid lightgrey;
   border-radius: 5px;
   margin-bottom:10px;
 }
-.name-adalaber,
-.name-adalaber__right{
+.adalaber__name,
+.adalaber__name-right{
   text-align: center;
 }
-.bio-adalaber,
-.bio-adalaber__right{
+.adalaber__bio,
+.adalaber__bio-right{
   text-align: center;
 }
-.social_icons_list,
-.social_icons_list__right{
+.social__icons-list,
+.social__icons-list-right{
   list-style: none;
   padding-top: 15px;
 }
-.social-icons__item{
+.social__icons-item{
   color: #099d8d;
   display: inline;
   padding: 0 3px 0 3px;
 }
-.social-icons__link{
+.social__icons-link{
   text-decoration: none;
   color: #099d8d;
   cursor: pointer;
@@ -47,47 +47,51 @@
   align-items: flex-start;
   margin-top: 60px;
 }
-.img-adalaber{
+.adalaber__img{
   width: 205px;
   margin-right: 25px;
 }
-.name-adalaber{
+.adalaber__name{
   text-align: left;
 }
-.bio-adalaber{
+.adalaber__bio{
   text-align: left;
 }
-.social_icons_list{
+.social__icons-list{
   text-align: left;
 }
- /*Adalabersright*/
+ /*Adalabers right*/
 .adalaber__align-right{
  flex-direction: row-reverse;
  margin-top: 60px;
  align-items: flex-start;
 }
-.img-adalaber__right{
+.adalaber__img-right{
   width: 205px;
   margin-left: 25px;
 }
-.name-adalaber__right{
+.adalaber__name-right{
   text-align: right;
 }
-.bio-adalaber__right{
+.adalaber__bio-right{
   text-align: right;
 }
-.social_icons_list__right{
+.social__icons-list-right{
   text-align: right;
 }
 }
 
 @media all and (min-width: 1140px) {
-  .img-adalaber,
-  .img-adalaber__right{
+  .adalaber__img{
     width: 278px;
     margin-right: 40px;
   }
-  .bio-adalaber, .bio-adalaber__right {
+  .adalaber__img-right{
+    width: 278px;
+    margin-left: 40px
+  }
+  .adalaber__bio, 
+  .adalaber__bio-right {
     max-width: 439px;
   }
 }
