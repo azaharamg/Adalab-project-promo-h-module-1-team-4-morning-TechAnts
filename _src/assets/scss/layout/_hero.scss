@@ -24,3 +24,11 @@
   width: 360px;
   height: 200px;
 }
+@media all and (min-width: 768px) {
+  .main__hero-text {
+    opacity: 0.8;
+    left: 6%;
+    transform: none;
+    width: 54%;
+  }
+}
