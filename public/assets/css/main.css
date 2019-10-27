@@ -189,9 +189,7 @@ section.anchor {
 }/* ##############  CONTAINER ALLS  ############## */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.adalaber,.adalaber__align-right {
+}/*Variable*/.adalaber,.adalaber__align-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +233,7 @@ section.anchor {
   text-decoration: none;
   color: #099d8d;
   cursor: pointer;
-}/*RESPONSIVE*//* ###################  FOOTER  #################### */.footer {
+}/*Responsive*//* ###################  FOOTER  #################### */.footer {
   width: 100vw;
   font-size: 14px;
   text-align: center;
@@ -360,19 +358,25 @@ section.anchor {
 }
 
 @media all and (min-width: 768px) {
-/*Adalabers left*/  .adalaber {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+  .adalaber,.adalaber__align-right {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     margin-top: 60px;
   }
 
-  .adalaber__img {
+  .adalaber__img,.adalaber__img-right {
     width: 205px;
+  }
+
+  .adalaber {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .adalaber__img {
     margin-right: 25px;
   }
 
@@ -386,19 +390,16 @@ section.anchor {
 
   .social__icons-list {
     text-align: left;
-  }/*Adalabers right*/  .adalaber__align-right {
+  }
+
+  .adalaber__align-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    margin-top: 60px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
   }
 
   .adalaber__img-right {
-    width: 205px;
     margin-left: 25px;
   }
 
@@ -483,15 +484,19 @@ section.anchor {
   }
 }
 
-@media all and (min-width: 1140px) {
+@media all and (min-width: 768px) and (min-width: 1140px) {
   .adalaber__img {
-    width: 278px;
     margin-right: 40px;
   }
 
   .adalaber__img-right {
-    width: 278px;
     margin-left: 40px;
+  }
+}
+
+@media all and (min-width: 1140px) {
+  .adalaber__img,.adalaber__img-right {
+    width: 278px;
   }
 
   .adalaber__bio,.adalaber__bio-right {
