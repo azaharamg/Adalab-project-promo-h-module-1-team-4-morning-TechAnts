@@ -1,7 +1,9 @@
-/* ###################  RESET ######################## */* {
+/* ###################  RESET ######################## */
+* {
   padding: 0;
   margin: 0;
-}/* ###################  BASE STYLES ################## */body {
+} /* ###################  BASE STYLES ################## */
+body {
   font-family: OpenSans, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -19,7 +21,8 @@
 
 section.anchor {
   padding-top: 105px;
-}/* ###################  HEADER #################### */.header-nav-link {
+} /* ###################  HEADER #################### */
+.header-nav-link {
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -78,6 +81,10 @@ section.anchor {
 
 .header-nav {
   width: 100%;
+}
+
+.header-nav section--dark {
+  background-color: #b8b8b9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +98,7 @@ section.anchor {
   background-color: #14d9c4;
 }
 
-.header-nav-list {
+.header-nav .header-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +109,7 @@ section.anchor {
   width: 100%;
 }
 
-.header-nav-item {
+.header-nav .header-nav-item {
   font-size: 15px;
   font-weight: 500;
   font-stretch: normal;
@@ -110,7 +117,8 @@ section.anchor {
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
-}/* ###################  HERO #################### */.main__hero {
+} /* ###################  HERO #################### */
+.main__hero {
   background: url("/assets/images/img-hero1.jpg") center top no-repeat;
   background-size: cover;
   height: 421px;
@@ -136,7 +144,8 @@ section.anchor {
   background-size: cover;
   width: 360px;
   height: 200px;
-}/* ###################  TEAM #################### */.team {
+} /* ###################  TEAM #################### */
+.team {
   position: relative;
   padding: 76px 15px 30px;
 }
@@ -155,15 +164,7 @@ section.anchor {
 
 .team .description {
   margin-bottom: 15px;
-}/* ###################  SKILLS ################## */.skill-content {
-  color: #54585a;
-}
-
-.skill {
-  text-align: center;
-  padding: 30px 20px 0 30px;
-}
-
+} /* ###################  SKILLS ################## */ /* ###################  SKILLS ################## */
 .skills {
   background-color: #b8b8b9;
   padding: 0px 15px 45px;
@@ -179,13 +180,19 @@ section.anchor {
   align-items: center;
 }
 
-.skill .heading {
+.skills .skill {
+  text-align: center;
+  padding: 30px 20px 0 30px;
+}
+
+.skills .skill .heading {
   text-transform: uppercase;
 }
 
-.section--dark {
-  background-color: #b8b8b9;
-}/* ##############  CONTAINER ALLS  ############## */h3.name-adalaber {
+.skills .skill .heading .skill-content {
+  color: #54585a;
+} /* ##############  CONTAINER ALLS  ############## */
+h3.name-adalaber {
   text-align: center;
 }
 
@@ -222,7 +229,8 @@ ul > li {
 
 .adalaber {
   padding: 15px;
-}/* ###################  FOOTER  #################### */.footer {
+} /* ###################  FOOTER  #################### */
+.footer {
   width: 100vw;
   font-size: 14px;
   text-align: center;
@@ -289,7 +297,8 @@ ul > li {
   text-decoration: none;
   color: #54585a;
   font-weight: bold;
-}/* ##############  RESPONSIVE  ############## */.anchor {
+} /* ##############  RESPONSIVE  ############## */
+.anchor {
   padding-top: 60px;
 }
 
@@ -322,24 +331,6 @@ ul > li {
 .team {
   padding: 45px;
   padding-bottom: 60px;
-}
-
-.skills {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  padding: 45px 30px 60px;
-}
-
-.skill {
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  padding-top: 0;
-  margin: 0 15px;
 }
 
 .container-central {
@@ -382,6 +373,24 @@ h3.name-adalaber {
 }
 
 @media all and (min-width: 768px) {
+  .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 45px 30px 60px;
+  }
+
+  .skills .skill {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-top: 0;
+    margin: 0 15px;
+  }
+
   .image {
     width: 115.9px;
     height: 45px;
@@ -422,24 +431,6 @@ h3.name-adalaber {
   .team {
     padding: 45px;
     padding-bottom: 60px;
-  }
-
-  .skills {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 45px 30px 60px;
-  }
-
-  .skill {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    padding-top: 0;
-    margin: 0 15px;
   }
 
   .container-central {
@@ -487,6 +478,17 @@ h3.name-adalaber {
 }
 
 @media all and (min-width: 1140px) {
+  .skills {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .skills .skill {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+  }
+
   .container-central {
     max-width: 924px;
     margin: auto;
@@ -507,17 +509,6 @@ h3.name-adalaber {
 
   .team p {
     width: 50%;
-  }
-
-  .skills {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .skill {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
   }
 
   .container-bio-adalaber {

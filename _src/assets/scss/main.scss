@@ -74,28 +74,31 @@ section.anchor {
 
 .header-nav {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45px;
-  background-color: #14d9c4;
-}
+  section--dark {
+    background-color: #b8b8b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: #14d9c4;
+  }
 
-.header-nav-list {
-  display: flex;
-  justify-content: space-evenly;
-  opacity: 0.9;
-  width: 100%;
-}
+  .header-nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0.9;
+    width: 100%;
+  }
 
-.header-nav-item {
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  color: #ffffff;
+  .header-nav-item {
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
 }
 
 /* ###################  HERO #################### */
@@ -151,54 +154,30 @@ section.anchor {
 
 /* ###################  SKILLS ################## */
 
-.skill-content {
-  color: #54585a;
-}
-
-.skill {
-  text-align: center;
-  padding: 30px 20px 0 30px;
-}
-
-.skills {
-  background-color: #b8b8b9;
-  padding: 0px 15px 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skill .heading {
-  text-transform: uppercase;
-}
-
-.section--dark {
-  background-color: #b8b8b9;
-}
+@import "layout/skills";
 
 /* ##############  CONTAINER ALLS  ############## */
-
 h3.name-adalaber {
   text-align: center;
 }
 
-ul>li {
+ul > li {
   list-style: none;
 }
 
 .img-adalaber {
-    width: 180px;
-    height: 180px;
-    margin: 30px auto 15px;
-    display: block;
-    text-align: center;
-    border: 5px solid lightgrey;
-    border-radius: 5px;
+  width: 180px;
+  height: 180px;
+  margin: 30px auto 15px;
+  display: block;
+  text-align: center;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
 }
 
 .social-icons {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .social-icons__item {
@@ -206,13 +185,13 @@ ul>li {
   display: inline;
   margin: 3px;
 }
-.social-icons__link{
-    color: #099d8d;
-    text-decoration: none;
-    cursor: pointer;
+.social-icons__link {
+  color: #099d8d;
+  text-decoration: none;
+  cursor: pointer;
 }
-.adalaber{
-    padding: 15px;
+.adalaber {
+  padding: 15px;
 }
 /* ###################  FOOTER  #################### */
 
@@ -308,18 +287,6 @@ ul>li {
     padding-bottom: 60px;
   }
 
-  .skills {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 45px 30px 60px;
-  }
-
-  .skill {
-    flex-basis: 50%;
-    padding-top: 0;
-    margin: 0 15px;
-  }
-
   .container-central {
     margin: 0 45px 0 45px;
   }
@@ -338,21 +305,20 @@ ul>li {
     text-align: left;
   }
 
-  .align-right>.container-bio-adalaber {
+  .align-right > .container-bio-adalaber {
     text-align: right;
     padding-right: 45px;
   }
 
-  .align-right>.container-bio-adalaber>h3.name-adalaber {
+  .align-right > .container-bio-adalaber > h3.name-adalaber {
     text-align: right;
   }
-
 
   .img-adalaber {
     width: 205px;
   }
 
-  .align-right>.adalaber-img {
+  .align-right > .adalaber-img {
     order: 1;
   }
 
@@ -392,18 +358,6 @@ ul>li {
   padding-bottom: 60px;
 }
 
-.skills {
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 45px 30px 60px;
-}
-
-.skill {
-  flex-basis: 50%;
-  padding-top: 0;
-  margin: 0 15px;
-}
-
 .container-central {
   margin: 0 45px 0 45px;
 }
@@ -422,12 +376,12 @@ h3.name-adalaber {
   text-align: left;
 }
 
-.align-right>.container-bio-adalaber {
+.align-right > .container-bio-adalaber {
   text-align: right;
   padding-right: 45px;
 }
 
-.align-right>.container-bio-adalaber>h3.name-adalaber {
+.align-right > .container-bio-adalaber > h3.name-adalaber {
   text-align: right;
 }
 
@@ -435,7 +389,7 @@ h3.name-adalaber {
   width: 205px;
 }
 
-.align-right>.adalaber-img {
+.align-right > .adalaber-img {
   order: 1;
 }
 
@@ -453,14 +407,6 @@ h3.name-adalaber {
 
   .team p {
     width: 50%;
-  }
-
-  .skills {
-    justify-content: center;
-  }
-
-  .skill {
-    flex-basis: 40%;
   }
 
   .container-bio-adalaber {
