@@ -116,7 +116,7 @@ section.anchor {
   letter-spacing: normal;
   color: #ffffff;
 }/* ###################  HERO #################### */.main__hero {
-  background: url("../assets/images/img-hero1.jpg") center top no-repeat;
+  background: url("/assets/images/img-hero1.jpg") top no-repeat;
   background-size: cover;
   height: 421px;
   position: relative;
