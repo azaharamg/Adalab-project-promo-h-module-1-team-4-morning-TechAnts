@@ -333,7 +333,6 @@ ul > li {
   padding-left: 0;
   margin-top: 20px;
   padding-left: 0;
-  margin-top: 20px;
 }
 
 .footer-nav-li {
@@ -447,6 +446,18 @@ ul > li {
 
   .footer-links {
     padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .footer-nav {
@@ -456,14 +467,16 @@ ul > li {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin-left: auto;
-    -webkit-box-flex: 50%;
-    -ms-flex: 50% 1;
-    flex: 50% 1;
     padding: 0;
     margin: 0px 48px 0px 48px;
     position: relative;
-    bottom: 35px;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    margin-right: 45px;
+  }
+
+  .footer-nav-ul {
+    margin-top: 0;
   }
 
   .footer-nav-li {
@@ -473,8 +486,16 @@ ul > li {
   .image {
     width: 115.9px;
     height: 45px;
-    -webkit-transform: translateY(-30%);
-    transform: translateY(-30%);
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+    margin-left: 45px;
+  }
+
+  .team-name {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    text-align: left;
+    padding-left: 45px;
   }
 
   .anchor {
@@ -554,10 +575,6 @@ ul > li {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-  }
-
-  .footer-links {
-    padding-bottom: 0;
   }
 
   .anchor {
