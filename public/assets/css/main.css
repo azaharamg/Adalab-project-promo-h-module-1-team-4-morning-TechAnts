@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-} /* ###################  BASE STYLES ################## */
-body {
+}/* ###################  BASE STYLES ################## */body {
   font-family: OpenSans, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -21,8 +20,7 @@ body {
 section.anchor {
   padding-top: 105px;
   padding-bottom: 45px;
-} /* ###################  HEADER #################### */
-.header-nav-link {
+}/* ###################  HEADER #################### */.header-nav-link {
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -117,9 +115,8 @@ section.anchor {
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
-} /* ###################  HERO #################### */
-.main__hero {
-  background: url("/assets/images/img-hero1.jpg") center top no-repeat;
+}/* ###################  HERO #################### */.main__hero {
+  background: url("../assets/images/img-hero1.jpg") center top no-repeat;
   background-size: cover;
   height: 421px;
   position: relative;
@@ -144,8 +141,7 @@ section.anchor {
   background-size: cover;
   width: 360px;
   height: 200px;
-} /* ###################  TEAM #################### */
-.team {
+}/* ###################  TEAM #################### */.team {
   position: relative;
   padding: 76px 15px 30px;
 }
@@ -164,8 +160,7 @@ section.anchor {
 
 .team .description {
   margin-bottom: 15px;
-} /* ###################  SKILLS ################## */ /* ###################  SKILLS ################## */
-.skills {
+}/* ###################  SKILLS ################## *//* ###################  SKILLS ################## */.skills {
   background-color: #b8b8b9;
   padding: 0px 15px 45px;
   display: -webkit-box;
@@ -189,10 +184,9 @@ section.anchor {
   text-transform: uppercase;
 }
 
-.section--dark {
-  background-color: #b8b8b9;
-} /* ##############  CONTAINER ALLS  ############## */ /*Variable*/
-.heading {
+.skills .skill .heading .skill-content {
+  color: #54585a;
+}/* ##############  CONTAINER ALLS  ############## *//*Variable*/.heading {
   font-family: Rubik;
   font-size: 24px;
   font-weight: bold;
@@ -201,14 +195,12 @@ section.anchor {
   color: #099d8d;
 }
 
-.adalaber *,
-.adalaber__align-right * {
+.adalaber *,.adalaber__align-right * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.adalaber,
-.adalaber__align-right {
+.adalaber,.adalaber__align-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,16 +214,14 @@ section.anchor {
   margin-top: 25px;
 }
 
-.adalaber__img,
-.adalaber__img-right {
+.adalaber__img,.adalaber__img-right {
   width: 180px;
   border: 5px solid lightgrey;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.adalaber__name,
-.adalaber__name-right {
+.adalaber__name,.adalaber__name-right {
   font-family: OpenSans;
   font-weight: normal;
   font-stretch: normal;
@@ -243,8 +233,7 @@ section.anchor {
   color: #000000;
 }
 
-.adalaber__bio,
-.adalaber__bio-right {
+.adalaber__bio,.adalaber__bio-right {
   font-family: OpenSans;
   font-weight: normal;
   font-stretch: normal;
@@ -256,8 +245,7 @@ section.anchor {
   color: #54585a;
 }
 
-.social__icons-list,
-.social__icons-list-right {
+.social__icons-list,.social__icons-list-right {
   list-style: none;
   padding-top: 15px;
 }
@@ -272,8 +260,44 @@ section.anchor {
   text-decoration: none;
   color: #099d8d;
   cursor: pointer;
-} /*Responsive*/ /* ###################  FOOTER  #################### */
-.footer {
+}/*Responsive*/h3.name-adalaber {
+  text-align: center;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.img-adalaber {
+  width: 180px;
+  height: 180px;
+  margin: 30px auto 15px;
+  display: block;
+  text-align: center;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
+}
+
+.social-icons {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.social-icons__item {
+  color: #099d8d;
+  display: inline;
+  margin: 3px;
+}
+
+.social-icons__link {
+  color: #099d8d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.adalaber {
+  padding: 15px;
+}/* ###################  FOOTER  #################### */.footer {
   width: 100vw;
   font-size: 14px;
   text-align: center;
@@ -322,57 +346,46 @@ section.anchor {
   text-decoration: none;
   color: #54585a;
   font-weight: bold;
-} /* ##############  RESPONSIVE  ############## */
-.anchor {
-  padding-top: 60px;
-}
+}/* ##############  RESPONSIVE  ############## */@media all and (min-width: 768px) {
+  .main__hero-text {
+    opacity: 0.8;
+    left: 6%;
+    -webkit-transform: none;
+    transform: none;
+    width: 54%;
+  }
 
-.header {
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-}
+  .team {
+    padding: 45px;
+    padding-bottom: 60px;
+  }
 
-.header-base {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  padding-left: 45px;
-}
+  .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 45px 30px 60px;
+  }
 
-.header-nav {
-  background-color: #099d8d;
-  height: 60px;
-  width: 50%;
-}
+  .skills .skill {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-top: 0;
+    margin: 0 15px;
+  }
 
-.main__hero-text {
-  opacity: 0.8;
-  left: 6%;
-  -webkit-transform: none;
-  transform: none;
-  width: 54%;
-}
-
-.team {
-  padding: 45px;
-  padding-bottom: 60px;
-}
-
-.container-central {
-  margin: 0 45px 0 45px;
-}
-
-@media all and (min-width: 768px) {
-  .adalaber,
-  .adalaber__align-right {
+  .adalaber,.adalaber__align-right {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     margin-top: 60px;
   }
 
-  .adalaber__img,
-  .adalaber__img-right {
+  .adalaber__img,.adalaber__img-right {
     width: 205px;
   }
 
@@ -455,21 +468,112 @@ section.anchor {
     width: 50%;
   }
 
-  .main__hero-text {
-    opacity: 0.8;
-    left: 6%;
-    -webkit-transform: none;
-    transform: none;
-    width: 54%;
+  .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 45px 30px 60px;
   }
 
-  .team {
-    padding: 45px;
-    padding-bottom: 60px;
+  .skill {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-top: 0;
+    margin: 0 15px;
   }
 
   .container-central {
     margin: 0 45px 0 45px;
+  }
+
+  .adalaber {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px 0 60px 0;
+  }
+
+  h3.name-adalaber {
+    text-align: left;
+  }
+
+  .container-bio-adalaber {
+    margin: 0 15px;
+    text-align: left;
+  }
+
+  .align-right > .container-bio-adalaber {
+    text-align: right;
+    padding-right: 45px;
+  }
+
+  .align-right > .container-bio-adalaber > h3.name-adalaber {
+    text-align: right;
+  }
+
+  .img-adalaber {
+    width: 205px;
+  }
+
+  .align-right > .adalaber-img {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .footer-links {
+    padding-bottom: 0;
+  }
+
+  .anchor {
+    padding-top: 60px;
+  }
+
+  .header {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 45px 30px 60px;
+  }
+
+  .skill {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-top: 0;
+    margin: 0 15px;
+  }
+
+  .container-central {
+    margin: 0 45px 0 45px;
+  }
+
+  head.adalaber {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px 0 60px 0;
+  }
+
+  h3.name-adalaber {
+    text-align: left;
+  }
+
+  .container-bio-adalaber {
+    margin: 0 15px;
+    text-align: left;
   }
 }
 
@@ -484,21 +588,6 @@ section.anchor {
 }
 
 @media all and (min-width: 1140px) {
-  .adalaber__img,
-  .adalaber__img-right {
-    width: 278px;
-  }
-
-  .adalaber__bio,
-  .adalaber__bio-right {
-    max-width: 439px;
-  }
-
-  .container-central {
-    max-width: 924px;
-    margin: auto;
-  }
-
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -514,6 +603,30 @@ section.anchor {
 
   .team p {
     width: 50%;
+  }
+
+  .skills {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .skills .skill {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+  }
+
+  .adalaber__img,.adalaber__img-right {
+    width: 278px;
+  }
+
+  .adalaber__bio,.adalaber__bio-right {
+    max-width: 439px;
+  }
+
+  .container-central {
+    max-width: 924px;
+    margin: auto;
   }
 
   .skills {
