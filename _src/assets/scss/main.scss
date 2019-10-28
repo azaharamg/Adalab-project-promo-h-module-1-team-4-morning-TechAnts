@@ -4,6 +4,7 @@
 }
 
 /* ###################  BASE STYLES ################## */
+@import "core/settings";
 
 body {
   font-family: OpenSans, sans-serif;
@@ -23,6 +24,7 @@ body {
 
 section.anchor {
   padding-top: 105px;
+  padding-bottom: 45px;
 }
 /* ###################  HEADER #################### */
 
@@ -59,7 +61,7 @@ section.anchor {
   justify-content: center;
   align-items: center;
   opacity: 0.95;
-  background-color: #099d8d;
+  background-color: $color-green-primary;
   flex: 1;
   height: 60px;
 }
@@ -96,55 +98,9 @@ section.anchor {
 }
 
 /* ###################  HERO #################### */
-.main__hero {
-  background: url("/assets/images/img-hero1.jpg") center top no-repeat;
-  background-size: cover;
-  height: 421px;
-  position: relative;
-}
-
-.main__hero-text {
-  position: absolute;
-  color: black;
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  bottom: 0;
-  background-color: #fff;
-  width: 80%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  padding: 14px 15px 16px 15px;
-}
-
-.image-main {
-  background-size: cover;
-  width: 360px;
-  height: 200px;
-}
-
+@import "layout/hero";
 /* ###################  TEAM #################### */
-
-.team {
-  position: relative;
-  padding: 76px 15px 30px;
-}
-
-.team:after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 95%;
-  transform: rotate(45deg);
-}
-
-.team .description {
-  margin-bottom: 15px;
-}
-
+@import "layout/team";
 /* ###################  SKILLS ################## */
 
 .skill-content {
@@ -173,6 +129,7 @@ section.anchor {
 }
 
 /* ##############  CONTAINER ALLS  ############## */
+@import "layout/container-adalabers";
 
 h3.name-adalaber {
   text-align: center;
@@ -212,57 +169,7 @@ ul > li {
 }
 /* ###################  FOOTER  #################### */
 
-.footer {
-  width: 100vw;
-  font-size: 14px;
-  text-align: center;
-  color: #b8b8b9;
-  font-family: "Open Sans", sans-serif;
-  border-top: 1px solid #b8b8b9;
-  border-top-color: rgb(184, 184, 185);
-}
-
-.footer-links {
-  display: block;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-links {
-  display: block;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 30px 0px 45px 0px;
-}
-
-.footer-nav {
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.footer-nav-ul {
-  padding-left: 0;
-  margin-top: 20px;
-  padding-left: 0;
-  margin-top: 20px;
-}
-
-.footer-nav-li {
-  list-style: none;
-  width: 264;
-  height: 19;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #54585a;
-  font-weight: bold;
-}
+@import "layout/footer";
 
 /* ##############  RESPONSIVE  ############## */
 
@@ -287,21 +194,9 @@ ul > li {
   }
 
   .header-nav {
-    background-color: #099d8d;
+    background-color: $color-green-primary;
     height: 60px;
     width: 50%;
-  }
-
-  .main__hero-text {
-    opacity: 0.8;
-    left: 6%;
-    transform: none;
-    width: 54%;
-  }
-
-  .team {
-    padding: 45px;
-    padding-bottom: 60px;
   }
 
   .skills {
@@ -354,100 +249,49 @@ ul > li {
   .footer-links {
     padding-bottom: 0;
   }
-}
 
-.anchor {
-  padding-top: 60px;
-}
+  .anchor {
+    padding-top: 60px;
+  }
 
-.header {
-  flex-wrap: nowrap;
-}
+  .header {
+    flex-wrap: nowrap;
+  }
 
-.header-base {
-  justify-content: flex-start;
-  padding-left: 45px;
-}
+  .skills {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 45px 30px 60px;
+  }
 
-.header-nav {
-  background-color: #099d8d;
-  height: 60px;
-  width: 50%;
-}
+  .skill {
+    flex-basis: 50%;
+    padding-top: 0;
+    margin: 0 15px;
+  }
 
-.main__hero-text {
-  opacity: 0.8;
-  left: 6%;
-  transform: none;
-  width: 54%;
-}
+  .container-central {
+    margin: 0 45px 0 45px;
+  }
 
-.team {
-  padding: 45px;
-  padding-bottom: 60px;
-}
+  head.adalaber {
+    display: flex;
+    padding: 45px 0 60px 0;
+  }
 
-.skills {
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 45px 30px 60px;
-}
+  h3.name-adalaber {
+    text-align: left;
+  }
 
-.skill {
-  flex-basis: 50%;
-  padding-top: 0;
-  margin: 0 15px;
+  .container-bio-adalaber {
+    margin: 0 15px;
+    text-align: left;
+  }
 }
-
-.container-central {
-  margin: 0 45px 0 45px;
-}
-
-.adalaber {
-  display: flex;
-  padding: 45px 0 60px 0;
-}
-
-h3.name-adalaber {
-  text-align: left;
-}
-
-.container-bio-adalaber {
-  margin: 0 15px;
-  text-align: left;
-}
-
-.align-right > .container-bio-adalaber {
-  text-align: right;
-  padding-right: 45px;
-}
-
-.align-right > .container-bio-adalaber > h3.name-adalaber {
-  text-align: right;
-}
-
-.img-adalaber {
-  width: 205px;
-}
-
-.align-right > .adalaber-img {
-  order: 1;
-}
-
 @media all and (min-width: 1140px) {
   .container-central {
     max-width: 924px;
     margin: auto;
-  }
-
-  .team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team p {
-    width: 50%;
   }
 
   .skills {
@@ -456,14 +300,5 @@ h3.name-adalaber {
 
   .skill {
     flex-basis: 40%;
-  }
-
-  .container-bio-adalaber {
-    width: 439px;
-    padding-left: 45px;
-  }
-
-  .img-adalaber {
-    width: 278px;
   }
 }
