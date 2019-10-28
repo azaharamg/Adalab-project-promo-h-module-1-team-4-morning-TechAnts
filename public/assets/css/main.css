@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-/* ###################  RESET ######################## */
-=======
->>>>>>> 58f986ef76ce17ee7b3f662e82c16c878810e83d
 * {
   padding: 0;
   margin: 0;
@@ -24,13 +20,9 @@ body {
 
 section.anchor {
   padding-top: 105px;
-<<<<<<< HEAD
+  padding-bottom: 45px;
 } /* ###################  HEADER #################### */
 .header-nav-link {
-=======
-  padding-bottom: 45px;
-}/* ###################  HEADER #################### */.header-nav-link {
->>>>>>> 58f986ef76ce17ee7b3f662e82c16c878810e83d
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -197,30 +189,26 @@ section.anchor {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-.skills .skill .heading .skill-content {
-  color: #54585a;
-} /* ##############  CONTAINER ALLS  ############## */
-h3.name-adalaber {
-=======
 .section--dark {
   background-color: #b8b8b9;
-}/* ##############  CONTAINER ALLS  ############## *//*Variable*/.heading {
+} /* ##############  CONTAINER ALLS  ############## */ /*Variable*/
+.heading {
   font-family: Rubik;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.88;
->>>>>>> 58f986ef76ce17ee7b3f662e82c16c878810e83d
   text-align: center;
   color: #099d8d;
 }
 
-.adalaber *,.adalaber__align-right * {
+.adalaber *,
+.adalaber__align-right * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.adalaber,.adalaber__align-right {
+.adalaber,
+.adalaber__align-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,14 +222,16 @@ h3.name-adalaber {
   margin-top: 25px;
 }
 
-.adalaber__img,.adalaber__img-right {
+.adalaber__img,
+.adalaber__img-right {
   width: 180px;
   border: 5px solid lightgrey;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.adalaber__name,.adalaber__name-right {
+.adalaber__name,
+.adalaber__name-right {
   font-family: OpenSans;
   font-weight: normal;
   font-stretch: normal;
@@ -253,7 +243,8 @@ h3.name-adalaber {
   color: #000000;
 }
 
-.adalaber__bio,.adalaber__bio-right {
+.adalaber__bio,
+.adalaber__bio-right {
   font-family: OpenSans;
   font-weight: normal;
   font-stretch: normal;
@@ -265,7 +256,8 @@ h3.name-adalaber {
   color: #54585a;
 }
 
-.social__icons-list,.social__icons-list-right {
+.social__icons-list,
+.social__icons-list-right {
   list-style: none;
   padding-top: 15px;
 }
@@ -280,16 +272,8 @@ h3.name-adalaber {
   text-decoration: none;
   color: #099d8d;
   cursor: pointer;
-<<<<<<< HEAD
-}
-
-.adalaber {
-  padding: 15px;
-} /* ###################  FOOTER  #################### */
+} /*Responsive*/ /* ###################  FOOTER  #################### */
 .footer {
-=======
-}/*Responsive*//* ###################  FOOTER  #################### */.footer {
->>>>>>> 58f986ef76ce17ee7b3f662e82c16c878810e83d
   width: 100vw;
   font-size: 14px;
   text-align: center;
@@ -379,14 +363,16 @@ h3.name-adalaber {
 }
 
 @media all and (min-width: 768px) {
-  .adalaber,.adalaber__align-right {
+  .adalaber,
+  .adalaber__align-right {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     margin-top: 60px;
   }
 
-  .adalaber__img,.adalaber__img-right {
+  .adalaber__img,
+  .adalaber__img-right {
     width: 205px;
   }
 
@@ -440,28 +426,6 @@ h3.name-adalaber {
     padding-bottom: 0;
   }
 
-<<<<<<< HEAD
-@media all and (min-width: 768px) {
-  .skills {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 45px 30px 60px;
-  }
-
-  .skills .skill {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    padding-top: 0;
-    margin: 0 15px;
-  }
-
-=======
->>>>>>> 58f986ef76ce17ee7b3f662e82c16c878810e83d
   .image {
     width: 115.9px;
     height: 45px;
@@ -520,29 +484,16 @@ h3.name-adalaber {
 }
 
 @media all and (min-width: 1140px) {
-  .adalaber__img,.adalaber__img-right {
+  .adalaber__img,
+  .adalaber__img-right {
     width: 278px;
   }
 
-  .adalaber__bio,.adalaber__bio-right {
+  .adalaber__bio,
+  .adalaber__bio-right {
     max-width: 439px;
   }
 
-<<<<<<< HEAD
-@media all and (min-width: 1140px) {
-  .skills {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .skills .skill {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-  }
-
-=======
->>>>>>> 58f986ef76ce17ee7b3f662e82c16c878810e83d
   .container-central {
     max-width: 924px;
     margin: auto;
@@ -565,15 +516,6 @@ h3.name-adalaber {
     width: 50%;
   }
 
-<<<<<<< HEAD
-  .container-bio-adalaber {
-    width: 439px;
-    padding-left: 45px;
-  }
-
-  .img-adalaber {
-    width: 278px;
-=======
   .skills {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -583,7 +525,6 @@ h3.name-adalaber {
   .skill {
     -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
->>>>>>> 58f986ef76ce17ee7b3f662e82c16c878810e83d
   }
 }
 
