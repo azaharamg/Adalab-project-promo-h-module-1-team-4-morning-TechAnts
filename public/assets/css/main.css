@@ -435,8 +435,39 @@ ul > li {
     text-align: right;
   }
 
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
   .footer-links {
     padding-bottom: 0;
+  }
+
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: auto;
+    -webkit-box-flex: 50%;
+    -ms-flex: 50% 1;
+    flex: 50% 1;
+    padding: 0;
+    margin: 0px 48px 0px 48px;
+    position: relative;
+    bottom: 35px;
+  }
+
+  .footer-nav-li {
+    text-align: right;
   }
 
   .image {
