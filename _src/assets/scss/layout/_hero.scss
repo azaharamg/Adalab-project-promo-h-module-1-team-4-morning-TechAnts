@@ -1,0 +1,34 @@
+.main__hero {
+  background: url("../assets/images/img-hero1.jpg") center top no-repeat;
+  background-size: cover;
+  height: 421px;
+  position: relative;
+}
+
+.main__hero-text {
+  position: absolute;
+  color: black;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  bottom: 0;
+  background-color: #fff;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 14px 15px 16px 15px;
+}
+
+.image-main {
+  background-size: cover;
+  width: 360px;
+  height: 200px;
+}
+@media all and (min-width: 768px) {
+  .main__hero-text {
+    opacity: 0.8;
+    left: 6%;
+    transform: none;
+    width: 54%;
+  }
+}

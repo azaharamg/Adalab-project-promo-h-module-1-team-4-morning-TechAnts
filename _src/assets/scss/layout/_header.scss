@@ -90,7 +90,8 @@ $backgroundColor2: #099d8d;
     background-color: $backgroundcolor2;
     height: 60px;
     width: 50%;
+    list-style-type: none;
   }
 }
 
-/*@import "layouts/header";*/
+/*@import "components/_header.scss"*/

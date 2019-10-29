@@ -1,0 +1,136 @@
+/*Variable*/
+$colorLink: #099d8d;
+$adalaberImgSmall: 180px;
+$adalaberImgMedium: 205px;
+$adalaberImgLarge: 278px;
+$breakpointMedium: 768px;
+$breakpointLarge: 1140px;
+
+.heading {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.88;
+  text-align: center;
+  color: $colorLink;
+}
+
+.adalaber *,
+.adalaber__align-right * {
+  box-sizing: border-box;
+}
+
+.adalaber,
+.adalaber__align-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  @media all and (min-width: $breakpointMedium) {
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+}
+.adalaber__img,
+.adalaber__img-right {
+  width: $adalaberImgSmall;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  @media all and (min-width: $breakpointMedium) {
+    width: $adalaberImgMedium;
+  }
+  @media all and (min-width: $breakpointLarge) {
+    width: $adalaberImgLarge;
+  }
+}
+
+@mixin adalabersInfoFonts() {
+  font-family: 'Open Sans', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.adalaber__name,
+.adalaber__name-right {
+  @include adalabersInfoFonts();
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2.25;
+  color: #000000;
+}
+.adalaber__bio,
+.adalaber__bio-right {
+  @include adalabersInfoFonts();
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #54585a;
+  @media all and (min-width: $breakpointLarge) {
+    max-width: 439px;
+  }
+}
+.social__icons-list,
+.social__icons-list-right {
+  list-style: none;
+  padding-top: 15px;
+}
+.social__icons-item {
+  color: $colorLink;
+  display: inline;
+  padding: 0 3px 0 3px;
+}
+.social__icons-link {
+  text-decoration: none;
+  color: $colorLink;
+  cursor: pointer;
+}
+
+/*Responsive*/
+@mixin adalabersLeft() {
+  .adalaber {
+    flex-direction: row;
+  }
+  .adalaber__img {
+    margin-right: 25px;
+    @media all and (min-width: $breakpointLarge) {
+      margin-right: 40px;
+    }
+  }
+  .adalaber__name {
+    text-align: left;
+  }
+  .adalaber__bio {
+    text-align: left;
+  }
+  .social__icons-list {
+    text-align: left;
+  }
+}
+
+@mixin adalabersRight() {
+  .adalaber__align-right {
+    flex-direction: row-reverse;
+  }
+  .adalaber__img-right {
+    margin-left: 25px;
+    @media all and (min-width: $breakpointLarge) {
+      margin-left: 40px;
+    }
+  }
+  .adalaber__name-right {
+    text-align: right;
+  }
+  .adalaber__bio-right {
+    text-align: right;
+  }
+  .social__icons-list-right {
+    text-align: right;
+  }
+}
+
+@media all and (min-width: $breakpointMedium) {
+  @include adalabersLeft();
+  @include adalabersRight();
+}
