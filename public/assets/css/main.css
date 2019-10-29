@@ -20,6 +20,10 @@
 section.anchor {
   padding-top: 105px;
   padding-bottom: 45px;
+}
+
+.heading {
+  text-transform: uppercase;
 }/* ###################  HEADER #################### */.header-nav-link {
   color: white;
   text-decoration: none;
@@ -146,6 +150,10 @@ section.anchor {
   padding: 76px 15px 30px;
 }
 
+.heading {
+  text-transform: uppercase;
+}
+
 .team:after {
   content: "";
   width: 30px;
@@ -222,12 +230,7 @@ section.anchor {
 }
 
 .adalaber__name,.adalaber__name-right {
-<<<<<<< HEAD
   font-family: 'Open Sans', sans-serif;
-=======
-  font-family: OpenSans;
-  font-weight: normal;
->>>>>>> 28fef1c7aa411988e0d5cc551a8c5a983c8abb77
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -239,12 +242,7 @@ section.anchor {
 }
 
 .adalaber__bio,.adalaber__bio-right {
-<<<<<<< HEAD
   font-family: 'Open Sans', sans-serif;
-=======
-  font-family: OpenSans;
-  font-weight: normal;
->>>>>>> 28fef1c7aa411988e0d5cc551a8c5a983c8abb77
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -332,6 +330,7 @@ ul > li {
   -ms-flex-align: center;
   align-items: center;
   padding: 30px 0px 45px 0px;
+  text-transform: uppercase;
 }
 
 .footer-nav {
