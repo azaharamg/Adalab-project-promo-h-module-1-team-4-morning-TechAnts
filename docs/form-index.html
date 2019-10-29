@@ -8,12 +8,42 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <script src="https://kit.fontawesome.com/94776826eb.js" crossorigin="anonymous"></script>
         <title>TechAnts</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
         <link rel="stylesheet" href="./assets/css/form.css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CRubik&display=swap"
         rel="stylesheet" />
     </head>
     
     <body>
+        <header class="page__header">
+            <header class="header">
+                <section class="header-base">
+                    <div class="GroupName"> <a href="index.html" class="link-home">
+          <img
+            class="img-logo"
+            src="./assets/images/generatedtext.jpg"
+            alt="logo TechAnts"
+          />
+        </a>
+
+                    </div>
+                </section>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item"> <a class="header-nav-link" href="#team4">EQUIPO</a>
+
+                        </li>
+                        <li class="header-nav-item" href=""> <a class="header-nav-link" href="#about-us">QUIENES SOMOS</a>
+
+                        </li>
+                        <li> <a class="header-nav-item" href="./form-index.html"> CONTACTO</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </header>
+        <div class="main__hero"></div>
         <div class="container">
             <div>
                  <h1 class="title">contacto</h1>
@@ -32,8 +62,8 @@
                     required />
                     <label for="email">E-mail<span class="asterisk">*</span>
                     </label>
-                    <input placeholder="nombre.apellidos@mail.com" id="mail" type="mail" name="mail"
-                    required />
+                    <input placeholder="nombre.apellidos@mail.com" id="mail" type="email"
+                    name="mail" required />
                     <label for="phone">Teléfono</label>
                     <input placeholder="Ej. 123456789" id="phone" type="tel"
                     name="phone" />
@@ -45,6 +75,26 @@
                 </div>
             </form>
         </div>
+        <footer class="footer">
+            <div class="footer-links">
+                <p class="team-name">Tech Ants ©2019</p>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-ul">
+                        <li class="footer-nav-li li1"> <a class="footer-link" href="#team4">equipo</a>
+
+                        </li>
+                        <li class="footer-nav-li li2"> <a class="footer-link" href="#about-us">quiénes somos</a>
+
+                        </li>
+                        <li class="footer-nav-li li3"> <a class="footer-link" href="./form-index.html">contactos</a>
+
+                        </li>
+                    </ul>
+                </nav>
+                <img class="image" src="./assets/images/img-Adalab.jpg" alt="logotipo_Adalab"
+                width="115.9px" height="45px">
+            </div>
+        </footer>
     </body>
 
 </html>
