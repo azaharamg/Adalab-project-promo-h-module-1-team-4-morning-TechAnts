@@ -222,24 +222,34 @@ section.anchor {
 }
 
 .adalaber__name,.adalaber__name-right {
+<<<<<<< HEAD
+  font-family: 'Open Sans', sans-serif;
+=======
   font-family: OpenSans;
   font-weight: normal;
+>>>>>>> 28fef1c7aa411988e0d5cc551a8c5a983c8abb77
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
+  font-weight: 700;
   font-size: 20px;
   line-height: 2.25;
   color: #000000;
 }
 
 .adalaber__bio,.adalaber__bio-right {
+<<<<<<< HEAD
+  font-family: 'Open Sans', sans-serif;
+=======
   font-family: OpenSans;
   font-weight: normal;
+>>>>>>> 28fef1c7aa411988e0d5cc551a8c5a983c8abb77
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #54585a;
