@@ -20,6 +20,10 @@
 section.anchor {
   padding-top: 105px;
   padding-bottom: 45px;
+}
+
+.heading {
+  text-transform: uppercase;
 }/* ###################  HEADER #################### */.header-nav-link {
   color: white;
   text-decoration: none;
@@ -151,6 +155,10 @@ p {
   padding: 76px 15px 30px;
 }
 
+.heading {
+  text-transform: uppercase;
+}
+
 .team:after {
   content: "";
   width: 30px;
@@ -227,24 +235,24 @@ p {
 }
 
 .adalaber__name,.adalaber__name-right {
-  font-family: OpenSans;
-  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
+  font-weight: 700;
   font-size: 20px;
   line-height: 2.25;
   color: #000000;
 }
 
 .adalaber__bio,.adalaber__bio-right {
-  font-family: OpenSans;
-  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #54585a;
@@ -327,6 +335,7 @@ ul > li {
   -ms-flex-align: center;
   align-items: center;
   padding: 30px 0px 45px 0px;
+  text-transform: uppercase;
 }
 
 .footer-nav {
@@ -338,7 +347,6 @@ ul > li {
   padding-left: 0;
   margin-top: 20px;
   padding-left: 0;
-  margin-top: 20px;
 }
 
 .footer-nav-li {
@@ -444,15 +452,68 @@ ul > li {
     text-align: right;
   }
 
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
   .footer-links {
     padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0px 48px 0px 48px;
+    position: relative;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    margin-right: 45px;
+  }
+
+  .footer-nav-ul {
+    margin-top: 0;
+  }
+
+  .footer-nav-li {
+    text-align: right;
   }
 
   .image {
     width: 115.9px;
     height: 45px;
-    -webkit-transform: translateY(-30%);
-    transform: translateY(-30%);
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+    margin-left: 45px;
+  }
+
+  .team-name {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    text-align: left;
+    padding-left: 45px;
   }
 
   .anchor {
@@ -532,10 +593,6 @@ ul > li {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-  }
-
-  .footer-links {
-    padding-bottom: 0;
   }
 
   .anchor {
