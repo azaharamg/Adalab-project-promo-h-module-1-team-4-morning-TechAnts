@@ -113,6 +113,7 @@ section.anchor {
   line-height: 2;
   letter-spacing: normal;
   color: white;
+  text-decoration: none;
 }/*MEDIA QUERIES*//*@import "components/_header.scss"*/.header-nav-link {
   color: white;
   text-decoration: none;
