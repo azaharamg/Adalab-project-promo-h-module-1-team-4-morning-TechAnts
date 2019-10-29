@@ -3,8 +3,8 @@
 /* variables*/
 $colorWhite: white;
 $font: Rubik, sans-serif;
-$backgroundColor: aquamarine;
-$backgroundColor2: #099d8d;
+$backgroundColor: #099d8d;
+$backgroundColor2: #14d9c4;
 
 .header-nav-link {
   color: $colorWhite;
@@ -32,8 +32,12 @@ $backgroundColor2: #099d8d;
   position: fixed;
   width: 100%;
   z-index: 999;
+  @media all and (min-width: 768px) {
+      .header  {
+      flex-wrap: nowrap;
+    }
+  }
 }
-
 .header-base {
   display: flex;
   justify-content: center;
@@ -42,8 +46,14 @@ $backgroundColor2: #099d8d;
   background-color: $backgroundColor2;
   flex: 1;
   height: 60px;
+  @media all and (min-width: 768px) {
+    .header-base  {
+      background-color: $backgroundColor2;
+      justify-content: flex-start;
+      padding-left: 45px;
+    }
+  }
 }
-
 .GroupName {
   line-height: 0.7;
   transform: scale(0.75);
@@ -55,7 +65,15 @@ $backgroundColor2: #099d8d;
   justify-content: center;
   align-items: center;
   height: 45px;
-  background-color: $backgroundColor;
+  background-color: $backgroundColor2;
+  @media all and (min-width: 768px) {
+    .header-nav  {
+      background-color: $backgroundColor;
+      height: 60px;
+      width: 50%;
+      list-style-type: none;
+    }
+  }
 }
 
 .header-nav-list {
@@ -73,24 +91,8 @@ $backgroundColor2: #099d8d;
   line-height: 2;
   letter-spacing: normal;
   color: $colorWhite;
+  text-decoration: none;
 }
 /*MEDIA QUERIES*/
 
-@media all and (min-width: 768px) {
-    .header  {
-    flex-wrap: nowrap;
-  }
-
-  .header-base  {
-    justify-content: flex-start;
-    padding-left: 45px;
-  }
-
-  .header-nav  {
-    background-color: $backgroundcolor2;
-    height: 60px;
-    width: 50%;
-  }
-}
-
-/*@import "components/_header.scss"*/
+/*@import "layout/_header.scss"*/
