@@ -360,6 +360,10 @@ ul > li {
     width: 54%;
   }
 
+  p {
+    padding: 10px 12px;
+  }
+
   .team {
     padding: 45px;
     padding-bottom: 60px;
