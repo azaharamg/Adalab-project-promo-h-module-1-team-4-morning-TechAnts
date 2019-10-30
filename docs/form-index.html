@@ -40,85 +40,71 @@
             </header>
         </header>
         <div class="main__hero"></div>
-        <div class="container">
+        <div class="container contact">
             <div>
                  <h1 class="title">contacto</h1>
 
             </div>
-            <p class="contactus">¿Quieres saber más? ¿Ponerte en contacto con nosotras? Rellena este formulario
-                y estaremos encantadas de conocerte.</p>
-            <p class="required"> <small>Todos los campos marcados con <span class="asterisk">*</span> son
-          obligatorios</small
-        >
-      </p>
+            <p class="contactus">Si has llegado hasta aquí... Es porque quieres contactarnos! Envíanos
+                un mensaje rellenando este formulario y estaremos encantadas de responderte.</p>
+            <p
+            class="required"> <small>Todos los campos marcados con <span class="asterisk">*</span> son
+        obligatorios</small>
 
-      <form action="/https://formspree.io/xbjraqje" method="post">
-        <div class="form__container">
-          <label for="firstName"
-            >Nombre completo <span class="asterisk">*</span></label
-          >
-          <input
-            placeholder="Nombre..."
-            id="firstName"
-            type="text"
-            name="firstName"
-            required
-          />
-          <div class="mail__phone">
-            <div>
-              <label for="email">E-mail <span class="asterisk">*</span></label>
-              <input
-                class="email"
-                placeholder="nombre.apellidos@mail.com"
-                id="email"
-                type="mail"
-                name="email"
-                required
-              />
-            </div>
-            <div class="phone">
-              <label for="phone">Teléfono </label>
-              <input
-                placeholder="Ej. 123456789"
-                id="phone"
-                type="tel"
-                name="phone"
-              />
-            </div>
-          </div>
-
-          <label for="comments">Mensaje <span class="asterisk">*</span></label>
-          <textarea
-            class="textarea"
-            placeholder="¿Qué necesitas?"
-            id="comments"
-            name="comments"
-            rows="8"
-            cols="80"
-          >
-          </textarea>
-          <input class="button" type="submit" value="enviar" />
+                </p>
+                <div class="form-container">
+                    <form class="form" action="/https://formspree.io/xbjraqje" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="firstName">Nombre completo <span class="asterisk">*</span>
+                            </label>
+                            <input class="form__input" placeholder="Nombre..." id="firstName" type="text"
+                            name="firstName" required />
+                        </div>
+                        <div class="form__group email">
+                            <label class="form__label" for="email">E-mail <span class="asterisk">*</span>
+                            </label>
+                            <input class=" form__input email" placeholder="nombre.apellidos@mail.com"
+                            id="email" type="mail" name="email" required />
+                        </div>
+                        <div class="form__group phone">
+                            <label class="form__label" for="phone">Teléfono</label>
+                            <input class="form__input" placeholder="Ej. 123456789"
+                            id="phone" type="tel" name="phone" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="comments">Mensaje <span class="asterisk">*</span>
+                            </label>
+                            <textarea class="textarea form__input" placeholder="¿Qué necesitas?" id="comments"
+                            name="comments" rows="8" cols="80"></textarea>
+                        </div>
+                        <div class="form__group submit">
+                            <input class="button" type="submit" value="enviar" />
+                        </div>
+                        <div class="form__container"></div>
+                </div>
+                </form>
         </div>
-      </form>
-    </div>
-    <footer class="footer">
-    <div class="footer-links">
-        <p class="team-name">Tech Ants ©2019</p>
-        <nav class="footer-nav">
-            <ul class="footer-nav-ul">
-                <li class="footer-nav-li li1"> <a class="footer-link" href="index.html#team4">equipo</a>
-                </li>
-                <li class="footer-nav-li li2"> <a class="footer-link" href="index.html#about-us">quiénes somos</a>
+        </div>
+        <footer class="footer">
+            <div class="footer-links">
+                <p class="team-name">Tech Ants ©2019</p>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-ul">
+                        <li class="footer-nav-li li1"> <a class="footer-link" href="index.html#team4">equipo</a>
 
-                </li>
-                <li class="footer-nav-li li3"> <a class="footer-link" href="./form-index.html">contacto</a>
+                        </li>
+                        <li class="footer-nav-li li2"> <a class="footer-link" href="index.html#about-us">quiénes somos</a>
 
-                </li>
-            </ul>
-        </nav>
-        <img class="image" src="./assets/images/img-Adalab.jpg" alt="logotipo_Adalab"
-        width="115.9px" height="45px">
-    </div>
-</footer>
-  </body>
+                        </li>
+                        <li class="footer-nav-li li3"> <a class="footer-link" href="./form-index.html">contacto</a>
+
+                        </li>
+                    </ul>
+                </nav>
+                <img class="image" src="./assets/images/img-Adalab.jpg" alt="logotipo_Adalab"
+                width="115.9px" height="45px">
+            </div>
+        </footer>
+    </body>
+
 </html>
