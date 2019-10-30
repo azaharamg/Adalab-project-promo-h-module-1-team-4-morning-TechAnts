@@ -77,9 +77,9 @@ $breakpointLarge: 1140px;
     text-decoration: none;
     color: $colorLink;
     cursor: pointer;
+    transition: color .6s ease;
     &:hover{
       color: #bb3176;
-      transition: color .6s;
     }
   }
 }
