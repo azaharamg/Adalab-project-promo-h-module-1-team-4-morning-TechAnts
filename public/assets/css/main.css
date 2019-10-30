@@ -369,12 +369,12 @@ section.anchor {
   text-decoration: none;
   color: #099d8d;
   cursor: pointer;
+  -webkit-transition: color .6s ease;
+  transition: color .6s ease;
 }
 
 .adalaber .social__icons-link:hover {
   color: #bb3176;
-  -webkit-transition: color .6s;
-  transition: color .6s;
 }/*Responsive: Add grid to medium devices*//*Responsive: Add grid to large devices*/ul > li {
   list-style: none;
 }/* ###################  FOOTER  #################### */.footer {
