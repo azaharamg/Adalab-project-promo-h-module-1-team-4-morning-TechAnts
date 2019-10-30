@@ -4,8 +4,8 @@ body {
   box-sizing: border-box;
 }
 @import "layout/form-hero";
-.container{
-margin: 0 15px 0 15px;
+.container {
+  margin: 0 15px 0 15px;
 }
 .title {
   font-family: Rubik;
@@ -22,15 +22,17 @@ margin: 0 15px 0 15px;
 }
 
 .contactus {
-  font-family: OpenSans;
-  font-size: 12px;
+  font-family: sans-serif;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: center;
   color: #54585a;
+  padding: 0px 25px;
+  margin-bottom: 25px;
 }
 
 .asterisk {
@@ -43,7 +45,7 @@ margin: 0 15px 0 15px;
 }
 
 .form__container {
-  font-family: OpenSans;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -52,34 +54,133 @@ margin: 0 15px 0 15px;
   letter-spacing: normal;
   color: #54585a;
   text-align: left;
-  
+  margin: 0px 15px 0px 15px;
 }
 
-label{
+label {
   margin: 0px 15px 15px 0px;
-
 }
-input{
+input {
   display: block;
-  height: 45px;
-  width: 280px;
+  height: 41px;
+  width: 301px;
   margin: 5px 0 15px 0;
-  
-
+  padding-left: 10px;
 }
 
-.textarea{
-  margin-top: 5px;  
-  width: 280px;
-  height: 105px;
+.textarea {
+  margin-top: 5px;
+  width: 303px;
+  height: 103px;
+  padding-left: 10px;
 }
 
-.button{
+.button {
   color: white;
   background: #099d8d;
   margin-top: 30px;
   margin-bottom: 60px;
-  height: 45px;
+  width: 276px;
+  height: 41px;
+  font-size: 16px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: 18px;
+}
+@media all and (min-width: 768px) {
+  .contactus {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+    padding: 0px 25px;
+    margin-bottom: 25px;
+  }
 
+  .form__container {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #54585a;
+    text-align: left;
+    margin: 0px 30px;
+    padding: 0px 15px;
+  }
+  input {
+    display: block;
+    height: 41px;
+    width: 619px;
+    // margin: 5px 0 15px 0;
+    padding-left: 10px;
+  }
+  .textarea {
+    margin: 5px 30px 0px 0px;
+    width: 621px;
+    height: 140px;
+    padding-left: 10px;
+  }
+  .button {
+    color: white;
+    background: #099d8d;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 290px;
+    height: 45px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin-left: 340px;
+  }
+}
+@media all and (min-width: 1200px) {
+  input {
+    height: 41px;
+    width: 890px;
+    margin: 5px 0 15px 0;
+    padding-left: 10px;
+  }
 
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 120px;
+    // align-items: center;
+    // justify-content: left;
+  }
+
+  .mail__phone {
+    display: flex;
+  }
+
+  .email {
+    width: 53vw;
+  }
+  .phone {
+    margin-left: 44px;
+  }
+  input#phone {
+    width: 22vh;
+  }
+
+  .textarea {
+    margin: 5px 30px 0px 0px;
+    width: 890px;
+    height: 140px;
+    padding-left: 10px;
+  }
+  .button {
+    margin-left: 613px;
+  }
 }

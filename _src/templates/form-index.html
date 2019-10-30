@@ -17,23 +17,29 @@
     />
   </head>
   <body>
-      <partial src="_header.html"></partial>
-      <partial src="_form-hero.html"></partial>
+    <partial src="_header.html"></partial>
+    <partial src="_form-hero.html"></partial>
     <div class="container">
-    <div>
-      <h1 class="title">contacto</h1>
-    </div>
-    <p class="contactus">
+      <div>
+        <h1 class="title">contacto</h1>
+      </div>
+      <p class="contactus">
         ¿Quieres saber más? ¿Ponerte en contacto con nosotras? Rellena este
         formulario y estaremos encantadas de conocerte.
       </p>
-  
-      <p class="required"><small>Todos los campos marcados con <span class="asterisk">*</span>son
-          obligatorios</small></p>
-  
-      <form action="https://formspree.io/xbjraqje" method="post">
+
+      <p class="required">
+        <small
+          >Todos los campos marcados con <span class="asterisk">*</span> son
+          obligatorios</small
+        >
+      </p>
+
+      <form action="/https://formspree.io/xbjraqje" method="post">
         <div class="form__container">
-          <label for="firstName">Nombre completo<span class="asterisk">*</span></label>
+          <label for="firstName"
+            >Nombre completo <span class="asterisk">*</span></label
+          >
           <input
             placeholder="Nombre..."
             id="firstName"
@@ -41,29 +47,43 @@
             name="firstName"
             required
           />
-          <label for="email">E-mail<span class="asterisk">*</span></label>
-          <input
-            placeholder="nombre.apellidos@mail.com"
-            id="mail"
-            type="email"
-            name="mail"
-            required
-          />
-          <label for="phone">Teléfono </label>
-          <input placeholder="Ej. 123456789" id="phone" type="tel" name="phone" />
-  
-          <label for="comments">Mensaje<span class="asterisk">*</span></label>
-          <textarea class="textarea"
+          <div class="mail__phone">
+            <div>
+              <label for="email">E-mail <span class="asterisk">*</span></label>
+              <input
+                class="email"
+                placeholder="nombre.apellidos@mail.com"
+                id="email"
+                type="mail"
+                name="email"
+                required
+              />
+            </div>
+            <div class="phone">
+              <label for="phone">Teléfono </label>
+              <input
+                placeholder="Ej. 123456789"
+                id="phone"
+                type="tel"
+                name="phone"
+              />
+            </div>
+          </div>
+
+          <label for="comments">Mensaje <span class="asterisk">*</span></label>
+          <textarea
+            class="textarea"
             placeholder="¿Qué necesitas?"
             id="comments"
             name="comments"
             rows="8"
-            cols="80">
+            cols="80"
+          >
           </textarea>
-          <input class="button" type="submit" value="Enviar" />
+          <input class="button" type="submit" value="enviar" />
         </div>
       </form>
-</div>
-<partial src="_footer.html"></partial>
+    </div>
+    <partial src="_footer.html"></partial>
   </body>
 </html>
