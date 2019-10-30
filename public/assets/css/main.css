@@ -493,7 +493,6 @@ section.anchor {
   .adalaber {
     display: grid;
     grid-template-columns: 205px auto;
-    grid-template-rows: 205px;
     grid-column-gap: 30px;
     grid-template-areas: "adalaber-image adalaber-information";
   }
@@ -701,7 +700,6 @@ section.anchor {
 
   .adalaber {
     grid-template-columns: 278px 439px;
-    grid-template-rows: 278px;
     grid-column-gap: 45px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;

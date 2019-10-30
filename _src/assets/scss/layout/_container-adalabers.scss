@@ -89,7 +89,6 @@ $breakpointLarge: 1140px;
   .adalaber {
     display: grid;
     grid-template-columns: $adalaberImgMedium auto;
-    grid-template-rows: $adalaberImgMedium;
     grid-column-gap: 30px;
     grid-template-areas: "adalaber-image adalaber-information";
 
@@ -127,7 +126,6 @@ $breakpointLarge: 1140px;
 @media all and (min-width: $breakpointLarge) {
   .adalaber {
     grid-template-columns: $adalaberImgLarge 439px;
-    grid-template-rows: $adalaberImgLarge;
     grid-column-gap: 45px;
     justify-content: center;
   }
