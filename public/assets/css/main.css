@@ -3,7 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-}/* ###################  BASE STYLES ################## */body {
+}/* ###################  BASE STYLES ################## *//* #################### COLORS #####################  *//* #################### TIPOGRAPHY #################  */body {
   font-family: OpenSans, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -729,6 +729,13 @@ section.anchor {
 
   .adalabers__list > li:nth-child(even) {
     grid-template-columns: 439px 278px;
+  }
+}
+
+@media all and (min-width: 1490px) {
+  .footer-nav {
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
   }
 }
 

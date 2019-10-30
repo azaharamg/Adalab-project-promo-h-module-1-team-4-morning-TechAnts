@@ -1,14 +1,28 @@
+@import "core/settings";
+
 body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-gray-secondary;
 }
+
 @import "layout/form-hero";
+
 .container {
-  margin: 0 15px 0 15px;
+  padding: 0 15px;
+  margin: 0;
 }
+
 .title {
-  font-family: Rubik;
+  font-family: $font-rubik;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
@@ -22,7 +36,6 @@ body {
 }
 
 .contactus {
-  font-family: sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -30,9 +43,26 @@ body {
   line-height: 24px;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: $color-gray-secondary;
   padding: 0px 25px;
   margin-bottom: 25px;
+
+  @media all and (min-width: 768px) {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-gray-secondary;
+    padding: 0px 25px;
+    margin-bottom: 25px;
+  }
+
+  @media all and (min-width: 1200px) {
+    max-width: 50%;
+  }
 }
 
 .asterisk {
@@ -44,54 +74,107 @@ body {
   text-align: center;
 }
 
-.form__container {
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #54585a;
-  text-align: left;
-  margin: 0px 15px 0px 15px;
-}
-
-label {
-  margin: 0px 15px 15px 0px;
-}
-input {
-  display: block;
-  height: 41px;
-  width: 301px;
-  margin: 5px 0 15px 0;
-  padding-left: 10px;
-}
-
-.textarea {
-  margin-top: 5px;
-  width: 303px;
-  height: 103px;
-  padding-left: 10px;
-}
-
-.button {
-  color: white;
-  background: #099d8d;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  width: 276px;
-  height: 41px;
-  font-size: 16px;
-  font-family: sans-serif;
-  border-radius: 10px;
+.form-container {
   display: flex;
   justify-content: center;
-  margin-left: 18px;
+  
+  @media all and (min-width: 1200px) {
+    margin: 0 auto;
+    max-width: 50%;
+  }
 }
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: 768px) {
+    max-width: 60%;
+  }
+
+  @media all and (min-width: 1200px) {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+
+  &.email {
+    @media all and (min-width: 1200px) {
+      max-width: 65%;
+    }
+  }
+  
+  &.phone {
+    @media all and (min-width: 1200px) {
+      max-width: 27%;
+      margin-left: auto;
+    }
+  }
+
+  &.submit {
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+    @media all and (min-width: 768px) {
+      align-items: flex-end;
+    }
+    
+    @media all and (min-width: 1200px) {
+      margin-bottom: 120px;
+    }
+
+    .button {
+      color: white;
+      background: #099d8d;
+      width: 276px;
+      height: 41px;
+      font-size: 16px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.form__label {
+  align-self: flex-start;
+  margin: 0px 15px 15px 0px;
+
+}
+
+.form__input {
+  width: 100%;
+  border: solid 1px $color-gray-primary;
+  height: 41px;
+  font-size: 16px;
+  color: $color-gray-secondary;
+
+  &::placeholder {
+    padding-left: 10px;
+    font-family: 'Open sans', sans-serif;
+    color: $color-gray-primary;
+    font-size: 14px;
+  }
+
+  &.textarea {
+    height: 103px;
+  }
+}
+
 @media all and (min-width: 768px) {
+
   .contactus {
-    font-family: sans-serif;
+    max-width: 60%;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -99,88 +182,50 @@ input {
     line-height: 24px;
     letter-spacing: normal;
     text-align: center;
-    color: #54585a;
-    padding: 0px 25px;
+    color: $color-gray-secondary;
+    margin: 0 auto;
     margin-bottom: 25px;
   }
-
-  .form__container {
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #54585a;
-    text-align: left;
-    margin: 0px 30px;
-    padding: 0px 15px;
-  }
-  input {
-    display: block;
-    height: 41px;
-    width: 619px;
-    // margin: 5px 0 15px 0;
-    padding-left: 10px;
-  }
-  .textarea {
-    margin: 5px 30px 0px 0px;
-    width: 621px;
-    height: 140px;
-    padding-left: 10px;
-  }
-  .button {
-    color: white;
-    background: #099d8d;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    width: 290px;
-    height: 45px;
-    font-size: 16px;
-    font-family: sans-serif;
-    border-radius: 10px;
-    margin-left: 340px;
-  }
 }
+
 @media all and (min-width: 1200px) {
-  input {
+  /*   input {
     height: 41px;
     width: 890px;
     margin: 5px 0 15px 0;
     padding-left: 10px;
-  }
+  } */
 
   .form__container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 120px;
+
     // align-items: center;
     // justify-content: left;
   }
 
-  .mail__phone {
+  /* .mail__phone {
     display: flex;
   }
 
   .email {
     width: 53vw;
   }
+
   .phone {
     margin-left: 44px;
-  }
-  input#phone {
-    width: 22vh;
-  }
+  } */
 
-  .textarea {
+  /*  input#phone {
+    width: 22vh;
+  } */
+
+  /*   .textarea {
     margin: 5px 30px 0px 0px;
     width: 890px;
     height: 140px;
     padding-left: 10px;
-  }
-  .button {
+  } */
+
+  /*  .button {
     margin-left: 613px;
-  }
+  } */
 }
