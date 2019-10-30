@@ -259,7 +259,7 @@ section.anchor {
   height: 30px;
   background-color: #fff;
   position: absolute;
-  left: 50%;
+  left: 44%;
   top: 95%;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -426,7 +426,20 @@ section.anchor {
   text-decoration: none;
   color: #54585a;
   font-weight: bold;
-}/* ##############  RESPONSIVE  ############## */@media all and (min-width: 768px) {
+}/* ##############  RESPONSIVE  ############## *//*@media all and (min-width: 1140px) {
+  .container-central {
+    max-width: 924px;
+    margin: auto;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skill {
+    flex-basis: 40%;
+  }
+}*/@media all and (min-width: 768px) {
   .header   .header {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -462,6 +475,10 @@ section.anchor {
   .team {
     padding: 45px;
     padding-bottom: 60px;
+  }
+
+  .team:after {
+    left: 47%;
   }
 
   .skills {
@@ -665,7 +682,7 @@ section.anchor {
   }
 }
 
-@media all and (min-width: 1140px) {
+@media all and (min-width: 1200px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -681,6 +698,10 @@ section.anchor {
 
   .team p {
     width: 50%;
+  }
+
+  .team:after {
+    left: 50%;
   }
 
   .skills {
@@ -708,22 +729,6 @@ section.anchor {
 
   .adalabers__list > li:nth-child(even) {
     grid-template-columns: 439px 278px;
-  }
-
-  .container-central {
-    max-width: 924px;
-    margin: auto;
-  }
-
-  .skills {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .skill {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
   }
 }
 

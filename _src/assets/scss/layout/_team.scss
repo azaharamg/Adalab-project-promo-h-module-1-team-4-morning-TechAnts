@@ -13,7 +13,7 @@
   height: 30px;
   background-color: #fff;
   position: absolute;
-  left: 50%;
+  left: 44%;
   top: 95%;
   transform: rotate(45deg);
 }
@@ -26,9 +26,11 @@
     padding: 45px;
     padding-bottom: 60px;
   }
+  .team:after {
+  left: 47%;
 }
-
-@media all and (min-width: 1140px) {
+}
+@media all and (min-width: 1200px) {
   .team {
     display: flex;
     flex-direction: column;
@@ -38,4 +40,7 @@
   .team p {
     width: 50%;
   }
+  .team:after {
+  left: 50%;
+}
 }

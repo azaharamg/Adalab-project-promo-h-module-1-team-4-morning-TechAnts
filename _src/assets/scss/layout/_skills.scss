@@ -12,7 +12,7 @@
     align-items: flex-start;
     padding: 45px 30px 60px;
   }
-  @media all and (min-width: 1140px) {
+  @media all and (min-width: 1200px) {
     justify-content: center;
   }
 
@@ -25,7 +25,7 @@
       padding-top: 0;
       margin: 0 15px;
     }
-    @media all and (min-width: 1140px) {
+    @media all and (min-width: 1200px) {
       flex-basis: 40%;
     }
     .heading {
