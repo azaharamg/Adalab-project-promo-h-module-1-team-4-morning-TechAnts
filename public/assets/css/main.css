@@ -141,6 +141,18 @@
   margin: 0 15px;
 }
 
+body {
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+
 .team {
   position: relative;
   padding: 76px 15px 30px;
