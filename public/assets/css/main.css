@@ -22,13 +22,10 @@
 section.anchor {
   padding-top: 105px;
   padding-bottom: 45px;
-<<<<<<< HEAD
 }
 
 .heading {
   text-transform: uppercase;
-}/* ###################  HEADER #################### */.header-nav-link {
-=======
 }/* ###################  HEADER #################### *//* ###################  HEADER #################### *//* variables*/.header-nav-link {
   color: white;
   text-decoration: none;
@@ -122,7 +119,6 @@ section.anchor {
   color: white;
   text-decoration: none;
 }/*MEDIA QUERIES*//*@import "layout/_header.scss"*/.header-nav-link {
->>>>>>> header-partial-css
   color: white;
   text-decoration: none;
   cursor: pointer;
