@@ -326,10 +326,16 @@ section.anchor {
   border: 5px solid lightgrey;
   border-radius: 5px;
   margin-bottom: 10px;
+  -webkit-transition: border-radius ease 1s;
+  transition: border-radius ease 1s;
+}
+
+.adalaber .adalaber__img:hover {
+  border-radius: 50%;
 }
 
 .adalaber .adalaber__name {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -342,7 +348,7 @@ section.anchor {
 }
 
 .adalaber .adalaber__bio {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -369,8 +375,8 @@ section.anchor {
   text-decoration: none;
   color: #099d8d;
   cursor: pointer;
-  -webkit-transition: color .6s ease;
-  transition: color .6s ease;
+  -webkit-transition: color 0.6s ease;
+  transition: color 0.6s ease;
 }
 
 .adalaber .social__icons-link:hover {
