@@ -45,6 +45,11 @@
     flex-basis: 40%;
     margin-right: 45px;
   }
+  
+  // Esto arregla el desborde de la imagen a 1500px
+  @media all and (min-width: 1490px) {
+    flex-basis: 45%;
+  }
 }
 
 .footer-nav-ul {

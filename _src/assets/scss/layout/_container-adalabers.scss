@@ -4,7 +4,7 @@ $adalaberImgSmall: 180px;
 $adalaberImgMedium: 205px;
 $adalaberImgLarge: 278px;
 $breakpointMedium: 768px;
-$breakpointLarge: 1140px;
+$breakpointLarge: 1200px;
 
 .heading {
   font-family: Rubik;
@@ -15,122 +15,134 @@ $breakpointLarge: 1140px;
   color: $colorLink;
 }
 
-.adalaber *,
-.adalaber__align-right * {
-  box-sizing: border-box;
-}
-
-.adalaber,
-.adalaber__align-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 25px;
-  @media all and (min-width: $breakpointMedium) {
-    align-items: flex-start;
-    margin-top: 60px;
-  }
-}
-.adalaber__img,
-.adalaber__img-right {
-  width: $adalaberImgSmall;
-  border: 5px solid lightgrey;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  @media all and (min-width: $breakpointMedium) {
-    width: $adalaberImgMedium;
-  }
-  @media all and (min-width: $breakpointLarge) {
-    width: $adalaberImgLarge;
-  }
-}
-
 @mixin adalabersInfoFonts() {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
 }
-.adalaber__name,
-.adalaber__name-right {
-  @include adalabersInfoFonts();
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 2.25;
-  color: #000000;
-}
-.adalaber__bio,
-.adalaber__bio-right {
-  @include adalabersInfoFonts();
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #54585a;
-  @media all and (min-width: $breakpointLarge) {
-    max-width: 439px;
-  }
-}
-.social__icons-list,
-.social__icons-list-right {
-  list-style: none;
-  padding-top: 15px;
-}
-.social__icons-item {
-  color: $colorLink;
-  display: inline;
-  padding: 0 3px 0 3px;
-}
-.social__icons-link {
-  text-decoration: none;
-  color: $colorLink;
-  cursor: pointer;
+
+.adalaber * {
+  box-sizing: border-box;
 }
 
-/*Responsive*/
-@mixin adalabersLeft() {
-  .adalaber {
-    flex-direction: row;
+.adalaber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 20px 0 20px;
+  @media all and (min-width: $breakpointMedium) {
+    margin-top: 60px;
   }
+
   .adalaber__img {
-    margin-right: 25px;
+    width: $adalaberImgSmall;
+    border: 5px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-radius ease 1s;
+    @media all and (min-width: $breakpointMedium) {
+      width: $adalaberImgMedium;
+    }
     @media all and (min-width: $breakpointLarge) {
-      margin-right: 40px;
+      width: $adalaberImgLarge;
     }
   }
+
+  .adalaber__img:hover {
+    border-radius: 50%;
+  }
+
   .adalaber__name {
-    text-align: left;
+    @include adalabersInfoFonts();
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2.25;
+    color: #000000;
   }
   .adalaber__bio {
-    text-align: left;
+    @include adalabersInfoFonts();
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #54585a;
   }
   .social__icons-list {
-    text-align: left;
+    list-style: none;
+    padding-top: 15px;
   }
-}
+  .social__icons-item {
+    color: $colorLink;
+    display: inline;
+    padding: 0 3px 0 3px;
+  }
+  .social__icons-link {
+    text-decoration: none;
+    color: $colorLink;
+    cursor: pointer;
+    transition: color 0.6s ease;
 
-@mixin adalabersRight() {
-  .adalaber__align-right {
-    flex-direction: row-reverse;
-  }
-  .adalaber__img-right {
-    margin-left: 25px;
-    @media all and (min-width: $breakpointLarge) {
-      margin-left: 40px;
+    &::after {
+      content: " · ";
+    }
+    &:hover {
+      color: #bb3176;
     }
   }
-  .adalaber__name-right {
-    text-align: right;
-  }
-  .adalaber__bio-right {
-    text-align: right;
-  }
-  .social__icons-list-right {
-    text-align: right;
+  .icon::after {
+    content: " ";
   }
 }
 
+/*Responsive: Add grid to medium devices*/
 @media all and (min-width: $breakpointMedium) {
-  @include adalabersLeft();
-  @include adalabersRight();
+  .adalaber {
+    display: grid;
+    grid-template-columns: $adalaberImgMedium auto;
+    grid-column-gap: 30px;
+    grid-template-areas: "adalaber-image adalaber-information";
+
+    .adalaber__grid-info {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      justify-items: flex-start;
+      grid-area: adalaber-information;
+
+      .adalaber__bio {
+        text-align: left;
+      }
+    }
+
+    .adalaber__grid-img {
+      grid-area: adalaber-image;
+    }
+  }
+
+  .adalabers__list > li:nth-child(even) {
+    grid-template-columns: auto $adalaberImgMedium;
+    grid-template-areas: "adalaber-information adalaber-image";
+
+    .adalaber__grid-info {
+      justify-items: flex-end;
+
+      .adalaber__bio {
+        text-align: right;
+      }
+    }
+  }
+}
+
+/*Responsive: Add grid to large devices*/
+@media all and (min-width: $breakpointLarge) {
+  .adalaber {
+    grid-template-columns: $adalaberImgLarge 439px;
+    grid-column-gap: 45px;
+    justify-content: center;
+  }
+
+  .adalabers__list > li:nth-child(even) {
+    grid-template-columns: 439px $adalaberImgLarge;
+  }
 }
