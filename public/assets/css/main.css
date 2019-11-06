@@ -30,6 +30,13 @@ section.anchor {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.header-nav-link:hover {
+  font-weight: bold;
+  color: #bb3176;
 }
 
 .heading {
