@@ -78,6 +78,12 @@
   align-items: center;
   height: 45px;
   background-color: #14d9c4;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: animation-header;
+  animation-name: animation-header;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .header-nav-list {
@@ -558,6 +564,30 @@
   .footer-nav {
     -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
+  }
+}
+
+@-webkit-keyframes animation-header {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes animation-header {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
