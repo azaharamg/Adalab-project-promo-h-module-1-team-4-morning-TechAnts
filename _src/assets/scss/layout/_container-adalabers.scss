@@ -16,7 +16,7 @@ $breakpointLarge: 1200px;
 }
 
 @mixin adalabersInfoFonts() {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -24,7 +24,7 @@ $breakpointLarge: 1200px;
   text-align: center;
 }
 
-.adalaber *{
+.adalaber * {
   box-sizing: border-box;
 }
 
@@ -36,7 +36,7 @@ $breakpointLarge: 1200px;
   @media all and (min-width: $breakpointMedium) {
     margin-top: 60px;
   }
-  
+
   .adalaber__img {
     width: $adalaberImgSmall;
     border: 5px solid lightgrey;
@@ -62,7 +62,6 @@ $breakpointLarge: 1200px;
     font-size: 16px;
     line-height: 1.5;
     color: #54585a;
-
   }
   .social__icons-list {
     list-style: none;
@@ -77,10 +76,17 @@ $breakpointLarge: 1200px;
     text-decoration: none;
     color: $colorLink;
     cursor: pointer;
-    transition: color .6s ease;
-    &:hover{
+    transition: color 0.6s ease;
+
+    &::after {
+      content: " · ";
+    }
+    &:hover {
       color: #bb3176;
     }
+  }
+  .icon::after {
+    content: " ";
   }
 }
 
@@ -134,6 +140,3 @@ $breakpointLarge: 1200px;
     grid-template-columns: 439px $adalaberImgLarge;
   }
 }
-
-
-
