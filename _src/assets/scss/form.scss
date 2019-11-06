@@ -77,7 +77,7 @@ body {
 .form-container {
   display: flex;
   justify-content: center;
-  
+
   @media all and (min-width: 1200px) {
     margin: 0 auto;
     max-width: 50%;
@@ -111,7 +111,7 @@ body {
       max-width: 65%;
     }
   }
-  
+
   &.phone {
     @media all and (min-width: 1200px) {
       max-width: 27%;
@@ -123,11 +123,11 @@ body {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 60px;
-    
+
     @media all and (min-width: 768px) {
       align-items: flex-end;
     }
-    
+
     @media all and (min-width: 1200px) {
       margin-bottom: 120px;
     }
@@ -149,7 +149,6 @@ body {
 .form__label {
   align-self: flex-start;
   margin: 0px 15px 15px 0px;
-
 }
 
 .form__input {
@@ -161,7 +160,7 @@ body {
 
   &::placeholder {
     padding-left: 10px;
-    font-family: 'Open sans', sans-serif;
+    font-family: "Open sans", sans-serif;
     color: $color-gray-primary;
     font-size: 14px;
   }
@@ -172,7 +171,6 @@ body {
 }
 
 @media all and (min-width: 768px) {
-
   .contactus {
     max-width: 60%;
     font-size: 16px;
@@ -196,11 +194,8 @@ body {
     padding-left: 10px;
   } */
 
-  .form__container {
-
-    // align-items: center;
-    // justify-content: left;
-  }
+  // align-items: center;
+  // justify-content: left;
 
   /* .mail__phone {
     display: flex;
