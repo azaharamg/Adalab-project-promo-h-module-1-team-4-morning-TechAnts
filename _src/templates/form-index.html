@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://kit.fontawesome.com/94776826eb.js" crossorigin="anonymous"></script>
   <title>TechAnts</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CRubik&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="stylesheet" href="./assets/css/form.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CRubik&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -19,47 +19,37 @@
     <div>
       <h1 class="title">contacto</h1>
     </div>
-    <p class="contactus">
-      Si has llegado hasta aquí... Es porque quieres contactarnos! Envíanos un mensaje rellenando este formulario y
-      estaremos
-      encantadas de responderte.
-    </p>
+    <p class="contactus">Si has llegado hasta aquí... Es porque quieres contactarnos! Envíanos un mensaje rellenando
+      este formulario y estaremos encantadas de responderte.</p>
 
-    <p class="required">
-      <small>Todos los campos marcados con <span class="asterisk">*</span> son
-        obligatorios</small>
+    <p class="required"><small>Todos los campos marcados con <span class="asterisk">*</span> son obligatorios</small>
     </p>
     <div class="form-container">
-      <form class="form" action="https://formspree.io/xbjraqje" method="post">
+      <form class="form" action="https://formspree.io/xbjraqje" method="POST">
         <div class="form__group">
-          <label class="form__label" for="firstName">Nombre completo <span class="asterisk">*</span></label>
+          <label class="form__label" for="firstName">Nombre completo<span class="asterisk">*</span></label>
           <input class="form__input" placeholder="Nombre..." id="firstName" type="text" name="firstName" required />
         </div>
         <div class="form__group email">
-          <label class="form__label" for="email">E-mail <span class="asterisk">*</span></label>
+          <label class="form__label" for="email">E-mail<span class="asterisk">*</span></label>
           <input class=" form__input email" placeholder="nombre.apellidos@mail.com" id="email" type="email" name="email"
             required />
         </div>
         <div class="form__group phone">
-          <label class="form__label" for="phone">Teléfono </label>
+          <label class="form__label" for="phone">Teléfono</label>
           <input class="form__input" placeholder="Ej. 123456789" id="phone" type="tel" name="phone" />
         </div>
         <div class="form__group">
-          <label class="form__label" for="comments">Mensaje <span class="asterisk">*</span></label>
+          <label class="form__label" for="comments">Mensaje<span class="asterisk">*</span></label>
           <textarea class="textarea form__input" placeholder="¿Qué necesitas?" id="comments" name="comments" rows="8"
-            cols="80">
-          </textarea>
+            cols="80"></textarea>
         </div>
         <div class="form__group submit">
           <input class="button" type="submit" value="enviar" />
         </div>
-        <div class="form__container">
-        </div>
+      </form>
     </div>
-    </form>
-  </div>
-  </div>
-  <partial src="_footer.html"></partial>
+    <partial src="_footer.html"></partial>
 </body>
 
 </html>
