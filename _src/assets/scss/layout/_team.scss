@@ -1,9 +1,18 @@
+section.anchor {
+  padding-top: 105px;
+  padding-bottom: 45px;
+}
+
+.container {
+  margin: 0 15px;
+}
+
 .team {
   position: relative;
   padding: 76px 15px 30px;
 }
 
-.heading{
+.heading {
   text-transform: uppercase;
 }
 
@@ -21,15 +30,18 @@
 .team .description {
   margin-bottom: 15px;
 }
+
 @media all and (min-width: 768px) {
   .team {
     padding: 45px;
     padding-bottom: 60px;
   }
+
   .team:after {
-  left: 47%;
+    left: 47%;
+  }
 }
-}
+
 @media all and (min-width: 1200px) {
   .team {
     display: flex;
@@ -40,7 +52,8 @@
   .team p {
     width: 50%;
   }
+
   .team:after {
-  left: 50%;
-}
+    left: 50%;
+  }
 }
