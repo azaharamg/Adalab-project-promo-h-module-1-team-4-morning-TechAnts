@@ -10,6 +10,11 @@ $backgroundColor2: #14d9c4;
   color: $colorWhite;
   text-decoration: none;
   cursor: pointer;
+  transition: all ease 1s;
+  &:hover {
+    font-weight: bold;
+    color: #bb3176;
+  }
 }
 
 .heading {
